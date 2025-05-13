@@ -183,11 +183,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&mt2 ESC TAB               &kp Q  &kp W       &kp E            &kp R        &kp T                   &kp Y                                 &kp U          &kp I            &kp O       &kp P          &kp BACKSPACE
-&mt LEFT_WIN SINGLE_QUOTE  &kp A  &kp S       &kp D            &kp F        &kp G                   &kp H                                 &kp J          &kp K            &kp L       &kp SEMI       &mt RIGHT_WIN ENTER
-&mt LSHFT EQUAL            &kp Z  &kp X       &kp C            &kp V        &kp B                   &kp N                                 &kp M          &kp COMMA        &kp PERIOD  &kp SLASH      &mt RIGHT_SHIFT MINUS
-&mt LEFT_ALT LANGUAGE_2    &mo 2  &mo 3       &kp LCTRL        &kp SPACE    &mt2 LPAR LEFT_BRACKET  &mt2 RIGHT_PARENTHESIS RIGHT_BRACKET  &kp BACKSPACE  &mo 1            &kp GRAVE   &kp BACKSLASH  &mt RIGHT_ALT LANGUAGE_1
-                                  &allow_end  &allow_pagedown  &allow_home  &allow_pageup           &allow_pageup                         &allow_home    &allow_pagedown  &allow_end
+&mt2 ESC TAB      &kp Q         &kp W       &mt2 LANGUAGE_2 E  &kp R        &kp T             &kp Y             &kp U              &mt2 LEFT_PARENTHESIS I  &mt2 RIGHT_PARENTHESIS O  &kp P                &mt2 EQUAL MINUS
+&kp LEFT_CONTROL  &kp A         &kp S       &kp D              &kp F        &kp G             &kp H             &mt2 LANGUAGE_1 J  &mt2 LEFT_BRACKET K      &mt2 RIGHT_BRACKET L      &kp SEMI             &mt2 SINGLE_QUOTE ENTER
+&kp LSHFT         &kp Z         &kp X       &kp C              &kp V        &kp B             &kp N             &kp M              &kp COMMA                &kp PERIOD                &mt2 UP_ARROW SLASH  &mt2 GRAVE BACKSLASH
+&kp LWIN          &kp LEFT_ALT  &kp TAB     &mo 1              &kp SPACE    &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE      &mo 1                    &kp LEFT                  &kp RIGHT            &kp DOWN
+                                &allow_end  &allow_pagedown    &allow_home  &allow_pageup     &allow_pageup     &allow_home        &allow_pagedown          &allow_end
             >;
         };
 
