@@ -173,6 +173,13 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        size_up_down: size_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SIZE_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LG(KP_MINUS)>, <&kp LG(LS(KP_PLUS))>;
+        };
     };
 
     keymap {
@@ -193,7 +200,7 @@
 
         SECONDARY_LAYER {
             display-name = "secondary_layer";
-            sensor-bindings = <&scroll_left_right>, <&scroll_left_right>;
+            sensor-bindings = <&size_up_down>, <&scroll_left_right>;
 
             bindings = <
 &trans  &mt2 EXCLAMATION NUMBER_1  &mt2 AT_SIGN NUMBER_2    &mt2 HASH NUMBER_3   &mt2 DOLLAR NUMBER_4            &mt2 PERCENT NUMBER_5            &kp PAGE_UP        &kp PRINTSCREEN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
