@@ -190,11 +190,11 @@
             sensor-bindings = <&volume_up_down>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC           &kp Q         &kp W          &kp E            &kp R        &kp T             &kp Y             &kp U          &kp I                        &kp O                          &kp P            &mt2 GRAVE MINUS
-&kp LEFT_CONTROL  &kp A         &kp S          &kp D            &kp F        &kp G             &kp H             &kp J          &mt2 LEFT_BRACKET K          &mt2 RIGHT_BRACKET L           &lt 8 SEMICOLON  &mt2 SINGLE_QUOTE SLASH
-&kp LSHFT         &kp Z         &kp X          &kp C            &kp V        &kp B             &kp N             &kp M          &mt2 LEFT_PARENTHESIS COMMA  &mt2 RIGHT_PARENTHESIS PERIOD  &kp UP_ARROW     &mt2 BACKSLASH EQUAL
-&kp LWIN          &kp LEFT_ALT  &kp LC(SPACE)  &lt 1 TAB        &kp SPACE    &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &kp BACKSPACE  &lt 1 ENTER                  &kp LEFT                       &kp DOWN         &kp RIGHT
-                                &allow_end     &allow_pagedown  &allow_home  &allow_pageup     &allow_pageup     &allow_home    &allow_pagedown              &allow_end
+&kp ESC           &kp Q         &kp W          &kp E            &kp R                 &kp T             &kp Y             &kp U                      &kp I                        &kp O                          &kp P            &mt2 GRAVE MINUS
+&kp LEFT_CONTROL  &kp A         &kp S          &kp D            &kp F                 &kp G             &kp H             &kp J                      &mt2 LEFT_BRACKET K          &mt2 RIGHT_BRACKET L           &lt 8 SEMICOLON  &mt2 SINGLE_QUOTE SLASH
+&kp LSHFT         &kp Z         &kp X          &kp C            &kp V                 &kp B             &kp N             &kp M                      &mt2 LEFT_PARENTHESIS COMMA  &mt2 RIGHT_PARENTHESIS PERIOD  &kp UP_ARROW     &mt2 BACKSLASH EQUAL
+&kp LWIN          &kp LEFT_ALT  &kp LC(SPACE)  &lt 1 TAB        &mt LEFT_SHIFT SPACE  &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 1 ENTER                  &kp LEFT                       &kp DOWN         &kp RIGHT
+                                &allow_end     &allow_pagedown  &allow_home           &allow_pageup     &allow_pageup     &allow_home                &allow_pagedown              &allow_end
             >;
         };
 
