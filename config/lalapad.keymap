@@ -290,11 +290,11 @@
 
         layer_8 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans           &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans    &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT              &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(RS(SPACE))     &trans    &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(NUMBER_4))  &trans    &trans        &trans           &trans  &trans
+                &trans  &trans  &trans  &trans  &trans                &trans    &trans        &trans
             >;
         };
     };
