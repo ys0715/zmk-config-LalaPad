@@ -199,11 +199,11 @@
             sensor-bindings = <&volume_up_down>, <&scroll_up_down>;
 
             bindings = <
-&mt2 LG(LS(NUMBER_4)) ESCAPE  &kp Q                      &kp W                       &kp E            &kp R                 &kp T             &kp Y             &kp U                      &kp I            &kp O                            &kp P                                    &mt2 GRAVE SINGLE_QUOTE
-&kp LEFT_CONTROL              &kp A                      &kp S                       &kp D            &kp F                 &kp G             &kp H             &kp J                      &kp K            &kp L                            &lt 8 SEMICOLON                          &mt RIGHT_WIN MINUS
-&kp LEFT_WIN                  &kp Z                      &kp X                       &kp C            &kp V                 &kp B             &kp N             &kp M                      &kp COMMA        &kp DOT                          &kp SLASH                                &mt RCTRL EQUAL
-&kp LALT                      &mt2 LG(HOME) LG(PAGE_UP)  &mt2 LG(END) LG(PAGE_DOWN)  &lt 1 TAB        &mt LEFT_SHIFT SPACE  &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 1 ENTER      &mt2 RIGHT_BRACKET LEFT_BRACKET  &mt2 RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_ALT BACKSLASH
-                                                         &allow_end                  &allow_pagedown  &allow_home           &allow_pageup     &allow_pageup     &allow_home                &allow_pagedown  &allow_end
+&mt2 LG(LS(NUMBER_4)) ESCAPE  &kp Q              &kp W               &kp E            &kp R                 &kp T             &kp Y             &kp U                      &kp I            &kp O                            &kp P                                    &mt2 GRAVE SINGLE_QUOTE
+&kp LEFT_CONTROL              &kp A              &kp S               &kp D            &kp F                 &kp G             &kp H             &kp J                      &kp K            &kp L                            &lt 8 SEMICOLON                          &mt RIGHT_WIN MINUS
+&kp LEFT_WIN                  &kp Z              &kp X               &kp C            &kp V                 &kp B             &kp N             &kp M                      &kp COMMA        &kp DOT                          &kp SLASH                                &mt RCTRL EQUAL
+&kp LALT                      &mt2 HOME PAGE_UP  &mt2 END PAGE_DOWN  &lt 1 TAB        &mt LEFT_SHIFT SPACE  &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 1 ENTER      &mt2 RIGHT_BRACKET LEFT_BRACKET  &mt2 RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_ALT BACKSLASH
+                                                 &allow_end          &allow_pagedown  &allow_home           &allow_pageup     &allow_pageup     &allow_home                &allow_pagedown  &allow_end
             >;
         };
 
