@@ -193,7 +193,7 @@
 &mt2 LG(LS(NUMBER_4)) ESCAPE  &kp Q              &kp W               &kp E            &kp R                  &kp T             &kp Y             &kp U                       &kp I            &kp O                            &kp P                                    &mt2 GRAVE SINGLE_QUOTE
 &kp LEFT_CONTROL              &kp A              &kp S               &kp D            &kp F                  &kp G             &kp H             &kp J                       &kp K            &kp L                            &lt 8 SEMICOLON                          &mt RIGHT_WIN MINUS
 &kp LEFT_WIN                  &kp Z              &kp X               &kp C            &kp V                  &kp B             &kp N             &kp M                       &kp COMMA        &kp DOT                          &mt2 LANGUAGE_2 SLASH                    &mt RCTRL EQUAL
-&kp LALT                      &mt2 HOME PAGE_UP  &mt2 END PAGE_DOWN  &lt 1 TAB        &mt2 LEFT_SHIFT SPACE  &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &mt2 RIGHT_SHIFT BACKSPACE  &lt 1 ENTER      &mt2 RIGHT_BRACKET LEFT_BRACKET  &mt2 RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_ALT BACKSLASH
+&mt LALT LA(LS(SPACE))        &mt2 HOME PAGE_UP  &mt2 END PAGE_DOWN  &lt 9 TAB        &mt2 LEFT_SHIFT SPACE  &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &mt2 RIGHT_SHIFT BACKSPACE  &lt 1 ENTER      &mt2 RIGHT_BRACKET LEFT_BRACKET  &mt2 RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt RIGHT_ALT BACKSLASH
                                                  &allow_end          &allow_pagedown  &allow_home            &allow_pageup     &allow_pageup     &allow_home                 &allow_pagedown  &allow_end
             >;
         };
@@ -203,11 +203,11 @@
             sensor-bindings = <&size_up_down>, <&scroll_left_right>;
 
             bindings = <
-&trans  &kp N1           &kp N2       &kp N3     &kp N4      &kp N5            &kp N6                &kp N7                 &kp N8        &kp N9             &kp N0  &trans
-&trans  &kp GRAVE        &kp MINUS    &kp EQUAL  &kp BSLH    &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTERISK  &kp LA(LS(SPACE))  &trans  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR  &kp PERCENT       &kp CARET             &kp AMPERSAND          &trans        &trans             &trans  &trans
-&trans  &trans           &trans       &trans     &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                 &trans        &trans             &trans  &trans
-                         &trans       &trans     &trans      &trans            &trans                &trans                 &trans        &trans
+&trans  &kp N1     &kp N2     &kp N3     &kp N4    &kp N5            &kp N6             &kp N7  &kp N8  &kp N9  &kp N0  &trans
+&trans  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp BSLH  &kp SINGLE_QUOTE  &trans             &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans    &trans            &trans             &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans  &trans
+                   &trans     &trans     &trans    &trans            &trans             &trans  &trans  &trans
             >;
         };
 
@@ -286,6 +286,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans           &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans           &trans  &trans
                 &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans    &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&trans  &kp LG(A)  &kp LG(S)  &trans     &kp LG(F)  &trans    &kp HOME       &kp END          &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&trans  &trans     &trans     &trans     &trans     &kp CAPS  &kp DEL        &trans           &trans           &kp KP_NUMBER_0  &dot_comma       &kp KP_ENTER
+                   &trans     &trans     &trans     &trans    &trans         &trans           &trans           &trans
             >;
         };
     };
