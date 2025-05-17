@@ -199,11 +199,11 @@
             sensor-bindings = <&volume_up_down>, <&scroll_up_down>;
 
             bindings = <
-&kp ESCAPE        &kp Q            &kp W       &kp E            &kp R           &kp T             &kp Y             &kp U            &kp I            &kp O                               &kp P                                 &kp BACKSPACE
-&kp LEFT_CONTROL  &kp A            &kp S       &kp D            &kp F           &kp G             &kp H             &kp J            &kp K            &kp L                               &lt 8 SEMICOLON                       &mt2 SINGLE_QUOTE ENTER
-&kp LEFT_WIN      &kp Z            &kp X       &kp C            &kp V           &kp B             &kp N             &kp M            &kp COMMA        &kp PERIOD                          &kp SLASH                             &mt2 MINUS EQUAL
-&kp LALT          &lt 1 LC(SPACE)  &kp TAB     &kp SPACE        &kp LEFT_SHIFT  &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &kp RIGHT_SHIFT  &mo 1            &mt2 LEFT_PARENTHESIS LEFT_BRACKET  &mt2 RIGHT_PARENTHESIS RIGHT_BRACKET  &mt2 GRAVE BACKSLASH
-                                   &allow_end  &allow_pagedown  &allow_home     &allow_pageup     &allow_pageup     &allow_home      &allow_pagedown  &allow_end
+&mt2 ESCAPE GRAVE  &kp Q                        &kp W             &kp E            &kp R                 &kp T             &kp Y             &kp U                      &kp I            &kp O             &kp P              &mt2 DEL SINGLE_QUOTE
+&kp LEFT_CONTROL   &kp A                        &kp S             &kp D            &kp F                 &kp G             &kp H             &kp J                      &kp K            &kp L             &lt 8 SEMICOLON    &mt RIGHT_WIN MINUS
+&kp LEFT_WIN       &kp Z                        &kp X             &kp C            &kp V                 &kp B             &kp N             &kp M                      &kp COMMA        &kp DOT           &kp SLASH          &mt RCTRL EQUAL
+&kp LALT           &mt2 LG(LS(NUMBER_4)) LG(X)  &mt2 LG(V) LG(C)  &lt 1 TAB        &mt LEFT_SHIFT SPACE  &lt 2 LANGUAGE_2  &lt 3 LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 1 ENTER      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mt RIGHT_ALT BACKSLASH
+                                                &allow_end        &allow_pagedown  &allow_home           &allow_pageup     &allow_pageup     &allow_home                &allow_pagedown  &allow_end
             >;
         };
 
@@ -290,11 +290,11 @@
 
         layer_8 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans    &trans           &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT              &kp DOWN  &kp UP_ARROW     &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(RS(SPACE))     &trans    &trans           &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LS(NUMBER_4))  &trans    &password_macro  &trans           &trans  &trans
-                &trans  &trans  &trans  &trans  &trans                &trans    &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans    &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT           &kp DOWN  &kp UP_ARROW     &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(RS(SPACE))  &trans    &trans           &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans             &trans    &password_macro  &trans           &trans  &trans
+                &trans  &trans  &trans  &trans  &trans             &trans    &trans           &trans
             >;
         };
     };
