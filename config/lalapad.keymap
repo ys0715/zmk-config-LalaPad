@@ -209,7 +209,7 @@
 
         SECONDARY_LAYER {
             display-name = "secondary_layer";
-            sensor-bindings = <&size_up_down>, <&scroll_left_right>;
+            sensor-bindings = <&size_up_down>, <&scroll_right_left>;
 
             bindings = <
 &trans  &kp N1           &kp N2     &kp N3     &kp N4         &kp N5            &kp N6                &kp N7                 &kp N8        &kp N9             &kp N0  &trans
