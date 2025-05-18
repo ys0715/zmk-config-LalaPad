@@ -180,6 +180,15 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp LG(MINUS)>, <&kp LG(LS(EQUAL))>;
         };
+
+        behavior_volume_down_up: behavior_volume_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "BEHAVIOR_VOLUME_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_DOWN>, <&kp C_VOLUME_UP>;
+
+            tap-ms = <29>;
+        };
     };
 
     keymap {
@@ -187,7 +196,7 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&volume_up_down>, <&scroll_up_down>;
+            sensor-bindings = <&behavior_volume_down_up>, <&scroll_up_down>;
 
             bindings = <
 &mt2 LG(LS(NUMBER_4)) ESCAPE  &kp Q              &kp W               &kp E            &kp R                  &kp T             &kp Y             &kp U                       &kp I            &kp O                            &kp P                                    &mt2 GRAVE SINGLE_QUOTE
@@ -297,6 +306,8 @@
 &trans  &trans     &trans     &trans     &trans     &kp CAPS  &kp DEL        &trans           &kp KP_ENTER     &kp KP_NUMBER_0  &kp COMMA        &kp DOT
                    &trans     &trans     &trans     &trans    &trans         &trans           &trans           &trans
             >;
+
+            sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
         };
     };
 };
