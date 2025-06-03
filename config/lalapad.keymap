@@ -290,11 +290,11 @@
 
         layer_8 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME              &kp PAGE_DOWN          &kp PAGE_UP   &kp END          &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT              &kp DOWN               &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(T)     &kp LG(W)        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &trans                 &trans        &trans           &trans  &trans
-                &trans  &trans  &trans  &trans  &trans                &trans                 &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp HOME              &kp PAGE_DOWN          &kp PAGE_UP    &kp END     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &allow_home           &allow_pagedown        &allow_pageup  &allow_end  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LG(T)      &kp LG(W)   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)             &trans                 &trans         &trans      &trans  &trans
+                &trans  &trans  &trans  &trans  &trans                &trans                 &trans         &trans
             >;
         };
 
