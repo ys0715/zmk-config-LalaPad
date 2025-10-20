@@ -220,6 +220,39 @@
             bindings = <&mcr_mcr>;
             key-positions = <6 7>;
         };
+
+        cmd_home {
+            bindings = <&kp HOME>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        cmd_page_down {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <31 32>;
+        };
+
+        cmd_page_up {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <32 33>;
+        };
+
+        cmd_end {
+            bindings = <&kp END>;
+            key-positions = <33 34>;
+            layers = <0>;
+        };
+
+        cmd_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <21 22>;
+        };
+
+        cmd_tab {
+            bindings = <&kp TAB>;
+            key-positions = <22 23>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -262,11 +295,11 @@
 
         command_number {
             bindings = <
-&trans  &trans     &trans        &trans     &trans     &trans  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans  &kp LG(A)  &kp LG(S)     &trans     &kp LG(F)  &trans  &kp HOME       &kp END          &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)  &trans  &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans  &trans     &kp CAPSLOCK  &trans     &trans     &mo 8   &mo 3          &kp DELETE       &trans           &kp KP_N0        &kp COLON        &dot_comma
-                   &trans        &trans     &trans     &trans  &trans         &trans           &trans           &trans
+&trans  &trans     &trans     &trans     &trans     &trans  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&trans  &kp LG(A)  &kp LG(S)  &trans     &kp LG(F)  &trans  &kp HOME       &kp END          &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&trans  &trans     &trans     &trans     &trans     &mo 8   &mo 3          &kp DELETE       &trans           &kp KP_N0        &kp COLON        &dot_comma
+                   &trans     &trans     &trans     &trans  &trans         &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
@@ -275,11 +308,11 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &trans   &trans   &trans  &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans   &trans   &trans   &trans   &kp CAPS  &trans  &trans  &trans  &trans  &trans  &trans
+                 &trans   &trans   &trans   &trans    &trans  &trans  &trans  &trans
             >;
         };
 
