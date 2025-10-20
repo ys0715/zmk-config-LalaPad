@@ -206,15 +206,28 @@
             layers = <0>;
         };
 
-        cmb_han_zen {
-            bindings = <&mt2 LA(GRAVE) LC(SPACE)>;
-            key-positions = <19 20 21>;
-            layers = <0>;
+        cmd_alfred {
+            bindings = <&kp LA(LS(SPACE))>;
+            key-positions = <42 30>;
         };
 
-        cmb_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <21 22>;
+        cmd_screen_shot {
+            bindings = <&kp LG(LS(NUMBER_4))>;
+            key-positions = <0 1>;
+        };
+
+        cmb_mcr {
+            bindings = <&mcr_mcr>;
+            key-positions = <6 7>;
+        };
+    };
+
+    macros {
+        mcr_mcr: mcr_mcr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N1 &kp N5 &kp N6 &kp N4 &kp Y &kp U>;
+            label = "MCR_MCR";
         };
     };
 
@@ -226,11 +239,11 @@
             sensor-bindings = <&behavior_volume_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESCAPE            &kp Q         &kp W             &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O       &kp P           &kp GRAVE
-&mt LEFT_CONTROL TAB  &kp A         &kp S             &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L       &kp SEMICOLON   &kp SQT
-&kp LEFT_SHIFT        &kp Z         &kp X             &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp DOT     &kp UP_ARROW    &kp SLASH
-&kp LEFT_WIN          &kp LEFT_ALT  &kp LC(LEFT_ALT)  &mo 2            &kp SPACE    &kp LC(SPACE)  &kp ENTER      &kp BACKSPACE  &mo 1            &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
-                                    &allow_end        &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
+&kp ESCAPE        &kp Q         &kp W             &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O       &kp P           &kp GRAVE
+&kp LEFT_CONTROL  &kp A         &kp S             &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L       &kp SEMICOLON   &kp SQT
+&kp LEFT_SHIFT    &kp Z         &kp X             &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp DOT     &kp UP_ARROW    &kp SLASH
+&kp LEFT_WIN      &kp LEFT_ALT  &kp LC(LEFT_ALT)  &mo 2            &kp SPACE    &kp TAB        &kp ENTER      &kp BACKSPACE  &mo 1            &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
+                                &allow_end        &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
@@ -239,21 +252,21 @@
             sensor-bindings = <&size_up_down>, <&scroll_right_left>;
 
             bindings = <
-&trans  &kp N1           &kp N2     &kp N3     &kp N4         &kp N5            &kp N6                &kp N7                 &kp N8        &kp N9             &kp N0         &trans
-&trans  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR     &kp PERCENT       &kp CARET             &kp AMPERSAND          &kp ASTERISK  &kp LA(LS(SPACE))  &kp SEMICOLON  &trans
-&trans  &kp GRAVE        &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA     &kp PERIOD         &kp SLASH      &trans
-&trans  &trans           &trans     &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                 &trans        &trans             &trans         &trans
+&trans  &kp N1           &kp N2     &kp N3     &kp N4         &kp N5            &kp N6                &kp N7                 &kp N8        &kp N9      &kp N0         &trans
+&trans  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR     &kp PERCENT       &kp CARET             &kp AMPERSAND          &kp ASTERISK  &none       &kp SEMICOLON  &trans
+&trans  &kp GRAVE        &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA     &kp PERIOD  &kp SLASH      &trans
+&trans  &trans           &trans     &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                 &trans        &trans      &trans         &trans
                          &trans     &trans     &trans         &trans            &trans                &trans                 &trans        &trans
             >;
         };
 
         command_number {
             bindings = <
-&trans  &trans     &trans        &trans                &trans     &trans  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans  &kp LG(A)  &kp LG(S)     &kp LS(LG(NUMBER_4))  &kp LG(F)  &trans  &kp HOME       &kp END          &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)             &kp LG(V)  &trans  &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans  &trans     &kp CAPSLOCK  &trans                &trans     &mo 8   &mo 3          &kp DELETE       &trans           &kp KP_N0        &kp COLON        &dot_comma
-                   &trans        &trans                &trans     &trans  &trans         &trans           &trans           &trans
+&trans  &trans     &trans        &trans     &trans     &trans  &kp PAGE_UP    &kp PRINTSCREEN  &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&trans  &kp LG(A)  &kp LG(S)     &trans     &kp LG(F)  &trans  &kp HOME       &kp END          &kp KP_ASTERISK  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans  &kp LG(Z)  &kp LG(X)     &kp LG(C)  &kp LG(V)  &trans  &kp PAGE_DOWN  &kp KP_MINUS     &kp KP_PLUS      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&trans  &trans     &kp CAPSLOCK  &trans     &trans     &mo 8   &mo 3          &kp DELETE       &trans           &kp KP_N0        &kp COLON        &dot_comma
+                   &trans        &trans     &trans     &trans  &trans         &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
