@@ -191,6 +191,33 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CMB_LANG2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        CMB_LANG1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        cmb_han_zen {
+            bindings = <&mt2 LA(GRAVE) LC(SPACE)>;
+            key-positions = <19 20 21>;
+            layers = <0>;
+        };
+
+        cmb_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <21 22>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
