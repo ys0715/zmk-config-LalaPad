@@ -232,25 +232,25 @@
 
         cmd_left_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <6 7>;
+            key-positions = <9 8>;
             layers = <0>;
         };
 
         cmd_right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <7 8>;
+            key-positions = <9 10>;
             layers = <0>;
         };
 
         cmd_equal {
             bindings = <&kp EQUAL>;
-            key-positions = <8 9>;
+            key-positions = <6 7>;
             layers = <0>;
         };
 
         cmd_minus {
             bindings = <&kp MINUS>;
-            key-positions = <9 10>;
+            key-positions = <7 8>;
             layers = <0>;
         };
 
