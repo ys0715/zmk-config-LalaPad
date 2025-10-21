@@ -209,16 +209,19 @@
         cmd_alfred {
             bindings = <&kp LA(LS(SPACE))>;
             key-positions = <42 30>;
+            layers = <0>;
         };
 
-        cmd_screen_shot {
-            bindings = <&kp LG(LS(NUMBER_4))>;
+        cmd_esc {
+            bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            layers = <0>;
         };
 
         cmb_mcr {
             bindings = <&mcr_mcr>;
             key-positions = <6 7>;
+            layers = <0>;
         };
 
         cmd_home {
@@ -230,11 +233,13 @@
         cmd_page_down {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <31 32>;
+            layers = <0>;
         };
 
         cmd_page_up {
             bindings = <&kp PAGE_UP>;
             key-positions = <32 33>;
+            layers = <0>;
         };
 
         cmd_end {
@@ -261,11 +266,11 @@
             sensor-bindings = <&behavior_volume_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESCAPE            &kp Q         &kp W             &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O       &kp P           &kp GRAVE
-&mt LEFT_CONTROL TAB  &kp A         &kp S             &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L       &kp SEMICOLON   &kp ENTER
-&kp LEFT_SHIFT        &kp Z         &kp X             &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp DOT     &kp UP_ARROW    &kp SLASH
-&kp LEFT_WIN          &kp LEFT_ALT  &kp LC(LEFT_ALT)  &mo 2            &kp SPACE    &kp MINUS      &kp SQT        &kp BACKSPACE  &mo 1            &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
-                                    &allow_end        &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
+&kp TAB           &kp Q         &kp W                               &kp E            &kp R        &kp T                    &kp Y                     &kp U          &kp I            &kp O       &kp P           &mt2 GRAVE SQT
+&kp LEFT_CONTROL  &kp A         &kp S                               &kp D            &kp F        &kp G                    &kp H                     &kp J          &kp K            &kp L       &kp SEMICOLON   &kp ENTER
+&kp LEFT_SHIFT    &kp Z         &kp X                               &kp C            &kp V        &kp B                    &kp N                     &kp M          &kp COMMA        &kp DOT     &kp UP_ARROW    &mt2 BACKSLASH SLASH
+&kp LEFT_WIN      &kp LEFT_ALT  &mt2 LC(LEFT_ALT) LS(LG(NUMBER_4))  &mo 2            &kp SPACE    &mt2 LEFT_BRACKET EQUAL  &mt2 RIGHT_BRACKET MINUS  &kp BACKSPACE  &mo 1            &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
+                                &allow_end                          &allow_pagedown  &allow_home  &allow_pageup            &allow_pageup             &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
