@@ -194,24 +194,6 @@
     combos {
         compatible = "zmk,combos";
 
-        CMB_LANG2 {
-            bindings = <&kp LANGUAGE_2>;
-            key-positions = <19 20>;
-            layers = <0>;
-        };
-
-        CMB_LANG1 {
-            bindings = <&kp LANGUAGE_1>;
-            key-positions = <20 21>;
-            layers = <0>;
-        };
-
-        cmb_mcr {
-            bindings = <&mcr_mcr>;
-            key-positions = <19 18>;
-            layers = <0>;
-        };
-
         cmd_home {
             bindings = <&kp HOME>;
             key-positions = <30 31>;
@@ -283,13 +265,25 @@
             key-positions = <42 30>;
             layers = <0>;
         };
+
+        cmd_alfred {
+            bindings = <&kp LA(LS(SPACE))>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        cmb_mcr {
+            bindings = <&mcr_mcr>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
     };
 
     macros {
         mcr_mcr: mcr_mcr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N1 &kp N5 &kp N6 &kp N4 &kp Y &kp U>;
+            bindings = <&kp LANGUAGE_2 &kp N1 &kp N5 &kp N6 &kp N4 &kp Y &kp U>;
             label = "MCR_MCR";
         };
     };
