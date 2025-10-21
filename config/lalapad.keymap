@@ -208,19 +208,13 @@
 
         cmd_alfred {
             bindings = <&kp LA(LS(SPACE))>;
-            key-positions = <42 30>;
-            layers = <0>;
-        };
-
-        cmd_esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <21 22>;
             layers = <0>;
         };
 
         cmb_mcr {
             bindings = <&mcr_mcr>;
-            key-positions = <6 7>;
+            key-positions = <19 18>;
             layers = <0>;
         };
 
@@ -247,6 +241,42 @@
             key-positions = <33 34>;
             layers = <0>;
         };
+
+        cmb_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <35 34>;
+            layers = <0>;
+        };
+
+        cmd_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
+        cmd_left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        cmd_right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        cmd_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <8 9>;
+            layers = <0>;
+        };
+
+        cmd_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <9 10>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -266,11 +296,11 @@
             sensor-bindings = <&behavior_volume_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp TAB           &kp Q         &kp W                               &kp E            &kp R        &kp T                    &kp Y                     &kp U          &kp I            &kp O       &kp P           &mt2 GRAVE SQT
-&kp LEFT_CONTROL  &kp A         &kp S                               &kp D            &kp F        &kp G                    &kp H                     &kp J          &kp K            &kp L       &kp SEMICOLON   &kp ENTER
-&kp LEFT_SHIFT    &kp Z         &kp X                               &kp C            &kp V        &kp B                    &kp N                     &kp M          &kp COMMA        &kp DOT     &kp UP_ARROW    &mt2 BACKSLASH SLASH
-&kp LEFT_WIN      &kp LEFT_ALT  &mt2 LC(LEFT_ALT) LS(LG(NUMBER_4))  &mo 2            &kp SPACE    &mt2 LEFT_BRACKET EQUAL  &mt2 RIGHT_BRACKET MINUS  &kp BACKSPACE  &mo 1            &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
-                                &allow_end                          &allow_pagedown  &allow_home  &allow_pageup            &allow_pageup             &allow_home    &allow_pagedown  &allow_end
+&kp TAB           &kp Q         &kp W                               &kp E            &kp R        &kp T          &kp Y          &kp U          &kp I            &kp O       &kp P           &kp SQT
+&kp LEFT_CONTROL  &kp A         &kp S                               &kp D            &kp F        &kp G          &kp H          &kp J          &kp K            &kp L       &kt SEMI        &kp ENTER
+&kp LEFT_SHIFT    &kp Z         &kp X                               &kp C            &kp V        &kp B          &kp N          &kp M          &kp COMMA        &kp DOT     &kp UP_ARROW    &kp SLASH
+&kp LEFT_WIN      &kp LEFT_ALT  &mt2 LC(LEFT_ALT) LS(LG(NUMBER_4))  &mo 2            &kp SPACE    &kp LANG2      &kp LANG1      &kp BACKSPACE  &mo 1            &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
+                                &allow_end                          &allow_pagedown  &allow_home  &allow_pageup  &allow_pageup  &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
@@ -279,11 +309,11 @@
             sensor-bindings = <&size_up_down>, <&scroll_right_left>;
 
             bindings = <
-&trans  &kp N1           &kp N2     &kp N3     &kp N4         &kp N5            &kp N6                &kp N7                 &kp N8        &kp N9      &kp N0         &trans
-&trans  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR     &kp PERCENT       &kp CARET             &kp AMPERSAND          &kp ASTERISK  &none       &kp SEMICOLON  &trans
-&trans  &kp GRAVE        &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COMMA     &kp PERIOD  &kp SLASH      &trans
-&trans  &trans           &trans     &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                 &trans        &trans      &trans         &trans
-                         &trans     &trans     &trans         &trans            &trans                &trans                 &trans        &trans
+&trans  &kp N1           &kp N2     &kp N3     &kp N4         &kp N5            &kp N6             &kp N7         &kp N8        &kp N9                &kp N0                 &trans
+&trans  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR     &kp PERCENT       &kp CARET          &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp GRAVE        &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp SINGLE_QUOTE  &trans             &trans         &trans        &trans                &trans                 &trans
+&trans  &trans           &trans     &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans        &trans                &trans                 &trans
+                         &trans     &trans     &trans         &trans            &trans             &trans         &trans        &trans
             >;
         };
 
