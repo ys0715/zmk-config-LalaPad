@@ -206,12 +206,6 @@
             layers = <0>;
         };
 
-        cmd_alfred {
-            bindings = <&kp LA(LS(SPACE))>;
-            key-positions = <21 22>;
-            layers = <0>;
-        };
-
         cmb_mcr {
             bindings = <&mcr_mcr>;
             key-positions = <19 18>;
