@@ -277,6 +277,24 @@
             key-positions = <18 19>;
             layers = <0>;
         };
+
+        cmd_left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        cmd_right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <3 4>;
+            layers = <0>;
+        };
+
+        cmd_middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <2 3 4>;
+            layers = <0>;
+        };
     };
 
     macros {
