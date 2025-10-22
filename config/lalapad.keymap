@@ -256,13 +256,13 @@
 
         cmd_escape {
             bindings = <&kp ESCAPE>;
-            key-positions = <29 41>;
+            key-positions = <0 1>;
             layers = <0>;
         };
 
         cmd_screen_shot {
             bindings = <&kp LS(LG(NUMBER_4))>;
-            key-positions = <42 30>;
+            key-positions = <1 2 0>;
             layers = <0>;
         };
 
