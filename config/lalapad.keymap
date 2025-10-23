@@ -393,11 +393,11 @@
 
         command_number {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans  &trans
-&trans  &kp LG(A)  &kp LG(S)  &trans     &kp LG(F)  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans    &trans          &trans        &trans     &trans  &trans
-&trans  &trans     &trans     &trans     &trans     &trans  &trans    &kp DELETE      &trans        &trans     &trans  &trans
-                   &trans     &trans     &trans     &trans  &trans    &trans          &trans        &trans
+&kp ESCAPE  &trans     &trans     &trans     &trans     &trans  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans  &trans
+&trans      &kp LG(A)  &kp LG(S)  &trans     &kp LG(F)  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans      &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans    &trans          &trans        &trans     &trans  &trans
+&trans      &trans     &trans     &trans     &trans     &trans  &trans    &kp DELETE      &trans        &trans     &trans  &trans
+                       &trans     &trans     &trans     &trans  &trans    &trans          &trans        &trans
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
