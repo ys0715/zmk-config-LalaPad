@@ -250,13 +250,13 @@
 
         cmd_alfred {
             bindings = <&kp LA(LS(SPACE))>;
-            key-positions = <19 20>;
+            key-positions = <15 16>;
             layers = <0>;
         };
 
         cmb_mcr {
             bindings = <&mcr_mcr>;
-            key-positions = <18 19>;
+            key-positions = <16 17>;
             layers = <0>;
         };
 
@@ -287,6 +287,30 @@
         cmd_system_layer {
             bindings = <&mo 3>;
             key-positions = <0 12>;
+            layers = <0>;
+        };
+
+        cmd_left {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        cmd_down {
+            bindings = <&kp DOWN_ARROW>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        cmd_up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <20 21>;
+            layers = <1>;
+        };
+
+        cmd_right {
+            bindings = <&kp RIGHT>;
+            key-positions = <21 22>;
             layers = <0>;
         };
     };
@@ -399,11 +423,11 @@
 
         command {
             bindings = <
-&kp ESCAPE  &kp LG(LEFT)  &kp LG(W)  &kp LG(RIGHT)     &kp LG(R)  &kp LG(T)      &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans  &trans
-&trans      &kp LG(A)     &kp LG(S)  &kp LC(UP_ARROW)  &kp LG(F)  &kp LG(LS(T))  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans      &kp LG(Z)     &kp LG(X)  &kp LG(C)         &kp LG(V)  &kp LC(LEFT)   &trans    &trans          &trans        &trans     &trans  &trans
-&trans      &trans        &trans     &trans            &trans     &kp LC(RIGHT)  &trans    &kp DELETE      &trans        &trans     &trans  &trans
-                          &trans     &trans            &trans     &trans         &trans    &trans          &trans        &trans
+&kp ESCAPE     &kp LG(LEFT)  &kp LG(W)  &kp LG(RIGHT)     &kp LG(R)  &kp LG(T)      &trans  &trans      &trans  &trans  &trans  &trans
+&kp LC(DOWN)   &kp LG(A)     &kp LG(S)  &kp LC(UP_ARROW)  &kp LG(F)  &kp LG(LS(T))  &trans  &trans      &trans  &trans  &trans  &trans
+&kp LG(LS(Z))  &kp LG(Z)     &kp LG(X)  &kp LG(C)         &kp LG(V)  &kp LC(LEFT)   &trans  &trans      &trans  &trans  &trans  &trans
+&mkp LCLK      &mkp MCLK     &mkp RCLK  &trans            &trans     &kp LC(RIGHT)  &trans  &kp DELETE  &trans  &trans  &trans  &trans
+                             &trans     &trans            &trans     &trans         &trans  &trans      &trans  &trans
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
