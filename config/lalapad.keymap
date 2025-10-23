@@ -305,7 +305,7 @@
         cmd_up {
             bindings = <&kp UP_ARROW>;
             key-positions = <20 21>;
-            layers = <1>;
+            layers = <0>;
         };
 
         cmd_right {
