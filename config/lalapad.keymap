@@ -391,13 +391,13 @@
             >;
         };
 
-        command_number {
+        command {
             bindings = <
-&kp ESCAPE  &trans     &trans     &trans     &trans     &trans  &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans  &trans
-&trans      &kp LG(A)  &kp LG(S)  &trans     &kp LG(F)  &trans  &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans      &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans  &trans    &trans          &trans        &trans     &trans  &trans
-&trans      &trans     &trans     &trans     &trans     &trans  &trans    &kp DELETE      &trans        &trans     &trans  &trans
-                       &trans     &trans     &trans     &trans  &trans    &trans          &trans        &trans
+&kp ESCAPE  &trans     &trans     &trans            &trans     &trans         &kp HOME  &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &trans  &trans
+&trans      &kp LG(A)  &kp LG(S)  &kp LC(UP_ARROW)  &kp LG(F)  &trans         &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans      &kp LG(Z)  &kp LG(X)  &kp LG(C)         &kp LG(V)  &kp LC(LEFT)   &trans    &trans          &trans        &trans     &trans  &trans
+&trans      &trans     &trans     &trans            &trans     &kp LC(RIGHT)  &trans    &kp DELETE      &trans        &trans     &trans  &trans
+                       &trans     &trans            &trans     &trans         &trans    &trans          &trans        &trans
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
@@ -407,8 +407,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp KP_ASTERISK  &kp KP_EQUAL
 &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &dot_comma    &trans           &kp COLON
-&trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans           &kp KP_NUMBER_0  &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &dot_comma    &trans           &kp COMMA
+&trans  &trans  &trans  &trans  &trans  &trans  &kp COLON        &trans           &kp KP_NUMBER_0  &trans        &trans           &trans
                 &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans
             >;
         };
