@@ -423,11 +423,11 @@
 
         command {
             bindings = <
-&kp ESCAPE     &kp LG(LEFT)  &kp LG(W)  &kp LG(RIGHT)     &kp LG(R)    &kp LG(T)      &trans  &trans      &trans  &trans  &trans  &trans
-&kp LC(DOWN)   &kp LG(A)     &kp LG(S)  &kp LC(UP_ARROW)  &kp LG(F)    &kp LG(LS(T))  &trans  &trans      &trans  &trans  &trans  &trans
-&kp LG(LS(Z))  &kp LG(Z)     &kp LG(X)  &kp LG(C)         &kp LG(V)    &kp LC(LEFT)   &trans  &trans      &trans  &trans  &trans  &trans
-&mkp LCLK      &mkp MCLK     &mkp RCLK  &trans            &kp LG(DEL)  &kp LC(RIGHT)  &trans  &kp DELETE  &trans  &trans  &trans  &trans
-                             &trans     &trans            &trans       &trans         &trans  &trans      &trans  &trans
+&kp ESCAPE     &kp LG(LEFT)  &kp LG(W)  &kp LG(RIGHT)     &kp LG(R)  &kp LG(T)      &trans  &trans      &trans  &trans  &trans  &trans
+&kp LC(DOWN)   &kp LG(A)     &kp LG(S)  &kp LC(UP_ARROW)  &kp LG(F)  &kp LG(LS(T))  &trans  &trans      &trans  &trans  &trans  &trans
+&kp LG(LS(Z))  &kp LG(Z)     &kp LG(X)  &kp LG(C)         &kp LG(V)  &kp LC(LEFT)   &trans  &trans      &trans  &trans  &trans  &trans
+&mkp LCLK      &mkp MCLK     &mkp RCLK  &trans            &trans     &kp LC(RIGHT)  &trans  &kp DELETE  &trans  &trans  &trans  &trans
+                             &trans     &trans            &trans     &trans         &trans  &trans      &trans  &trans
             >;
 
             sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
