@@ -248,18 +248,6 @@
             layers = <0>;
         };
 
-        cmd_alfred {
-            bindings = <&kp LA(LS(SPACE))>;
-            key-positions = <15 16>;
-            layers = <0>;
-        };
-
-        cmb_mcr {
-            bindings = <&mcr_mcr>;
-            key-positions = <16 17>;
-            layers = <0>;
-        };
-
         cmd_left_click {
             bindings = <&mkp LCLK>;
             key-positions = <2 3>;
@@ -345,22 +333,22 @@
             sensor-bindings = <&size_up_down>, <&scroll_right_left>;
 
             bindings = <
-&trans  &kp N1           &kp N2     &kp N3     &kp N4         &kp N5            &kp N6             &kp N7         &kp N8        &kp N9                &kp N0                 &kp LG(T)
-&trans  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR     &kp PERCENT       &kp CARET          &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp GRAVE        &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp SQT           &kp LG(LEFT)       &kp LG(RIGHT)  &kp LG(R)     &kp LG(W)             &trans                 &kp LG(LS(T))
-&trans  &trans           &trans     &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans         &trans        &trans                &trans                 &trans
-                         &trans     &trans     &trans         &trans            &trans             &trans         &trans        &trans
+&trans  &kp N1           &kp N2     &kp N3     &kp N4         &kp N5            &kp N6                &kp N7                 &kp N8        &kp N9             &kp N0  &mcr_mcr
+&trans  &kp EXCLAMATION  &kp AT     &kp HASH   &kp DOLLAR     &kp PERCENT       &kp CARET             &kp AMPERSAND          &kp ASTERISK  &kp LA(LS(SPACE))  &trans  &trans
+&trans  &kp GRAVE        &kp MINUS  &kp EQUAL  &kp BACKSLASH  &kp SQT           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans        &trans             &trans  &trans
+&trans  &trans           &trans     &trans     &trans         &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &trans                 &trans        &trans             &trans  &trans
+                         &trans     &trans     &trans         &trans            &trans                &trans                 &trans        &trans
             >;
         };
 
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15   &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &trans   &trans   &trans   &kp CAPS  &trans  &trans  &trans  &trans  &trans  &trans
-                 &trans   &trans   &trans   &trans    &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5    &kp F13  &kp F14                    &kp F15               &kp F16  &kp F17  &trans
+&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10   &kp F18  &kp F19                    &kp F20               &kp F21  &kp F22  &trans
+&trans  &trans  &trans  &trans  &kp F11  &kp F12   &kp F23  &kp F24                    &trans                &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans   &kp CAPS  &trans   &mt2 LG(R) LG(LEFT_ARROW)  &mt2 LG(W) LG(RIGHT)  &trans   &trans   &trans
+                &trans  &trans  &trans   &trans    &trans   &trans                     &trans                &trans
             >;
         };
 
