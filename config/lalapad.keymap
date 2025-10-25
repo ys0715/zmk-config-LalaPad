@@ -189,6 +189,13 @@
 
             tap-ms = <29>;
         };
+
+        move_desktop: move_desktop {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOVE_DESKTOP";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LC(LEFT)>, <&kp LC(RIGHT)>;
+        };
     };
 
     combos {
@@ -250,20 +257,20 @@
 
         cmd_left_click {
             bindings = <&mkp LCLK>;
-            key-positions = <16 28>;
-            layers = <0>;
+            key-positions = <16 17>;
+            layers = <0 4>;
         };
 
         cmd_right_click {
             bindings = <&mkp RCLK>;
-            key-positions = <17 29>;
-            layers = <0>;
+            key-positions = <29 28>;
+            layers = <0 4>;
         };
 
         cmd_middle_click {
             bindings = <&mkp MCLK>;
-            key-positions = <5 17>;
-            layers = <0>;
+            key-positions = <17 29>;
+            layers = <0 4>;
         };
 
         cmb_enter {
@@ -300,6 +307,35 @@
             bindings = <&kp RIGHT>;
             key-positions = <21 22>;
             layers = <0>;
+        };
+
+        cmd_mouse_left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <19 20>;
+            layers = <4 6>;
+        };
+
+        cmd_mouse_right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <20 21>;
+            layers = <4 6>;
+        };
+
+        mouse_middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <19 20 21>;
+        };
+
+        cmd_scroll_layer_right {
+            bindings = <&mo 5>;
+            key-positions = <21 22>;
+            layers = <4>;
+        };
+
+        cmd_scroll_layer_left {
+            bindings = <&mo 7>;
+            key-positions = <21 22>;
+            layers = <6>;
         };
     };
 
@@ -368,11 +404,11 @@
         MOUSE_R_LAYER {
             display-name = "mouse_r_layer";
             bindings = <
-&trans  &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mo 5   &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans     &trans     &trans     &trans  &trans  &mo 5   &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans     &trans     &trans
-                &trans     &trans     &trans     &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -390,11 +426,11 @@
         MOUSE_L_LAYER {
             display-name = "mouse_l_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &mo 7   &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans     &trans     &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -418,7 +454,7 @@
                              &trans     &trans            &trans                 &trans         &trans  &trans      &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_down_up>, <&scroll_left_right>;
+            sensor-bindings = <&scroll_down_up>, <&move_desktop>;
         };
 
         numbers {
