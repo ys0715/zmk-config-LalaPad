@@ -455,7 +455,7 @@
             bindings = <
 &kp ESCAPE     &kp LG(LEFT)  &kp LG(W)  &kp LG(RIGHT)     &kp LG(R)              &kp LG(T)      &kp LA(LC(U))  &kp LA(LC(I))           &trans             &trans  &trans  &trans
 &kp LC(DOWN)   &kp LG(A)     &kp LG(S)  &kp LC(UP_ARROW)  &kp LG(F)              &kp LG(LS(T))  &kp LC(LA(J))  &kp LA(LC(K))           &trans             &trans  &trans  &trans
-&kp LG(LS(Z))  &kp LG(Z)     &kp LG(X)  &kp LG(C)         &kp LG(V)              &kp LC(LEFT)   &kp LC(LA(F))  &kp LC(LA(G))           &trans             &trans  &trans  &trans
+&kp LG(LS(Z))  &kp LG(Z)     &kp LG(X)  &kp LG(C)         &kp LG(LS(V))          &kp LC(LEFT)   &kp LC(LA(F))  &kp LC(LA(G))           &trans             &trans  &trans  &trans
 &mkp LCLK      &mkp MCLK     &mkp RCLK  &trans            &kp LG(LA(BACKSPACE))  &kp LC(RIGHT)  &kp LA(LC(D))  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(RIGHT))  &trans  &trans  &trans
                              &trans     &trans            &trans                 &trans         &trans         &trans                  &trans             &trans
             >;
