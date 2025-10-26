@@ -378,7 +378,7 @@
 
         number_simbol {
             display-name = "secondary_layer";
-            sensor-bindings = <&size_up_down>, <&scroll_right_left>;
+            sensor-bindings = <&size_up_down>, <&move_desktop>;
 
             bindings = <
 &trans  &kp N1           &kp N2     &kp N3     &kp N4         &kp N5            &kp N6                &kp N7                 &kp N8        &kp N9             &kp N0  &mcr_mcr
@@ -402,8 +402,6 @@
 
         SYSTEM_LAYER {
             display-name = "system_layer";
-            sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
-
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
@@ -466,7 +464,7 @@
                              &trans     &trans            &trans                 &trans         &trans         &trans                  &trans             &trans
             >;
 
-            sensor-bindings = <&scroll_down_up>, <&move_desktop>;
+            sensor-bindings = <&size_up_down>, <&move_desktop>;
         };
 
         numbers {
