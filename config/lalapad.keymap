@@ -343,6 +343,12 @@
             key-positions = <42 30>;
             layers = <0>;
         };
+
+        cmd_full_screen {
+            bindings = <&kp LC(LA(ENTER))>;
+            key-positions = <43 44>;
+            layers = <8>;
+        };
     };
 
     macros {
