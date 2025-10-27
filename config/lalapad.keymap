@@ -233,7 +233,7 @@
 
         cmd_grave {
             bindings = <&kp GRAVE>;
-            key-positions = <10 9>;
+            key-positions = <9 7 8>;
             layers = <0>;
         };
 
