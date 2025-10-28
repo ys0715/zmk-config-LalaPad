@@ -451,11 +451,11 @@
 
         command {
             bindings = <
-&kp ESCAPE            &kp LS(LG(NUMBER_4))  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)              &kp LG(T)      &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP    &kp END    &kp LG(LS(P))  &trans
-&trans                &kp LG(A)             &kp LG(S)  &kp LC(DOWN)      &kp LG(F)              &kp LG(LS(T))  &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &trans         &trans
-&trans                &kp LG(Z)             &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)   &kp LG(LEFT)   &trans     &trans          &trans         &trans     &kp LG(SLASH)  &trans
-&kp LS(LA(LEFT_GUI))  &trans                &trans     &trans            &kp LG(LA(BACKSPACE))  &kp LG(RIGHT)  &kp LG(J)  &kp LC(LEFT)    &kp LC(RIGHT)  &trans     &trans         &trans
-                                            &trans     &trans            &trans                 &trans         &trans     &trans          &trans         &trans
+&kp ESCAPE  &kp LS(LG(NUMBER_4))  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)              &kp LG(T)      &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP    &kp END    &kp LG(LS(P))         &trans
+&trans      &kp LG(A)             &kp LG(S)  &kp LC(DOWN)      &kp LG(F)              &kp LG(LS(T))  &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &kp LS(LA(LEFT_GUI))  &trans
+&trans      &kp LG(Z)             &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)   &kp LG(LEFT)   &trans     &trans          &trans         &trans     &kp LG(SLASH)         &trans
+&trans      &trans                &trans     &trans            &kp LG(LA(BACKSPACE))  &kp LG(RIGHT)  &kp LG(J)  &kp LC(LEFT)    &kp LC(RIGHT)  &trans     &trans                &trans
+                                  &trans     &trans            &trans                 &trans         &trans     &trans          &trans         &trans
             >;
 
             sensor-bindings = <&size_up_down>, <&move_desktop>;
