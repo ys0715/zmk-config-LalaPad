@@ -343,6 +343,12 @@
             key-positions = <17 41>;
             layers = <0>;
         };
+
+        cmd_mcr {
+            bindings = <&mcr_mcr>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
     };
 
     macros {
