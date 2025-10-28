@@ -340,7 +340,7 @@
 
         cmb_rectangle_layer {
             bindings = <&mo 10>;
-            key-positions = <5 17>;
+            key-positions = <17 41>;
             layers = <0>;
         };
     };
