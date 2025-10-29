@@ -349,6 +349,12 @@
             key-positions = <10 11>;
             layers = <0>;
         };
+
+        cmd_layer_5 {
+            bindings = <&mo 5>;
+            key-positions = <16 28>;
+            layers = <0>;
+        };
     };
 
     macros {
