@@ -375,7 +375,7 @@
 
             bindings = <
 &kp GRAVE       &kp Q                          &kp W                &kp E             &kp R        &kp T                               &kp Y                                 &kp U          &kp I             &kp O                 &kp P          &kp SQT
-&kp LCTRL       &kp A                          &kp S                &kp D             &kp F        &kp G                               &kp H                                 &kp J          &kp K             &kp L                 &kp SEMI       &kp RCTRL
+&mt LCTRL TAB   &kp A                          &kp S                &kp D             &kp F        &kp G                               &kp H                                 &kp J          &kp K             &kp L                 &kp SEMI       &mt RCTRL ENTER
 &kp LEFT_SHIFT  &kp Z                          &kp X                &kp C             &kp V        &kp B                               &kp N                                 &kp M          &kp COMMA         &kp DOT               &kp SLASH      &kp RSHIFT
 &lt 9 TAB       &mt LEFT_ALT LS(LG(NUMBER_4))  &mt LEFT_GUI ESCAPE  &lt 8 LANGUAGE_1  &kp SPACE    &mt2 LEFT_BRACKET LEFT_PARENTHESIS  &mt2 RIGHT_BRACKET RIGHT_PARENTHESIS  &kp BACKSPACE  &lt 1 LANGUAGE_2  &mt RIGHT_GUI DELETE  &kp RIGHT_ALT  &lt 2 ENTER
                                                &allow_end           &allow_pagedown   &allow_home  &allow_pageup                       &allow_pageup                         &allow_home    &allow_pagedown   &allow_end
