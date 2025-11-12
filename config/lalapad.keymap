@@ -374,10 +374,10 @@
             sensor-bindings = <&behavior_volume_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp GRAVE                  &kp Q                          &kp W                &kp E            &kp R        &kp T                               &kp Y                                 &kp U          &kp I            &kp O                 &kp P                    &kp SQT
-&mt LCTRL TAB              &kp A                          &kp S                &kp D            &kp F        &kp G                               &kp H                                 &kp J          &kp K            &kp L                 &kp SEMI                 &mt RCTRL ENTER
-&mt LEFT_SHIFT LANGUAGE_2  &kp Z                          &kp X                &kp C            &kp V        &kp B                               &kp N                                 &kp M          &kp COMMA        &kp DOT               &kp SLASH                &mt RSHIFT LANGUAGE_1
-&lt 9 LANGUAGE_2           &mt LEFT_ALT LS(LG(NUMBER_4))  &mt LEFT_GUI ESCAPE  &mo 8            &kp SPACE    &mt2 LEFT_BRACKET LEFT_PARENTHESIS  &mt2 RIGHT_BRACKET RIGHT_PARENTHESIS  &kp BACKSPACE  &mo 1            &mt RIGHT_GUI DELETE  &mt RIGHT_ALT LC(SPACE)  &lt 2 LANGUAGE_1
+&kp GRAVE                  &kp Q                          &kp W                &kp E            &kp R        &kp T                               &kp Y                                 &kp U          &kp I            &kp O                 &kp P                  &kp SQT
+&mt LCTRL TAB              &kp A                          &kp S                &kp D            &kp F        &kp G                               &kp H                                 &kp J          &kp K            &kp L                 &kp SEMI               &mt RCTRL ENTER
+&mt LEFT_SHIFT LANGUAGE_2  &kp Z                          &kp X                &kp C            &kp V        &kp B                               &kp N                                 &kp M          &kp COMMA        &kp DOT               &kp SLASH              &mt RSHIFT LANGUAGE_1
+&lt 9 LANGUAGE_1           &mt LEFT_ALT LS(LG(NUMBER_4))  &mt LEFT_GUI ESCAPE  &mo 8            &kp SPACE    &mt2 LEFT_BRACKET LEFT_PARENTHESIS  &mt2 RIGHT_BRACKET RIGHT_PARENTHESIS  &kp BACKSPACE  &mo 1            &mt RIGHT_GUI DELETE  &mt RIGHT_ALT AT_SIGN  &lt 2 LANGUAGE_2
                                                           &allow_end           &allow_pagedown  &allow_home  &allow_pageup                       &allow_pageup                         &allow_home    &allow_pagedown  &allow_end
             >;
         };
@@ -387,11 +387,11 @@
             sensor-bindings = <&size_up_down>, <&move_desktop>;
 
             bindings = <
-&trans  &kp N1           &kp N2     &kp N3                &kp N4                 &kp N5            &kp N6               &kp N7                &kp N8        &kp N9             &kp N0  &mcr_mcr
-&trans  &kp EXCLAMATION  &kp AT     &kp HASH              &kp DOLLAR             &kp PERCENT       &kp CARET            &kp AMPERSAND         &kp ASTERISK  &kp LA(LS(SPACE))  &trans  &trans
-&trans  &kp GRAVE        &kp MINUS  &kp EQUAL             &kp BACKSLASH          &kp SQT           &mt2 LG(R) LG(LEFT)  &mt2 LG(W) LG(RIGHT)  &trans        &trans             &trans  &trans
-&trans  &trans           &trans     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &kp DEL               &trans        &trans             &trans  &mt2 LG(LS(T)) LG(T)
-                         &trans     &trans                &trans                 &trans            &trans               &trans                &trans        &trans
+&trans  &kp N1           &kp N2  &kp N3                &kp N4                 &kp N5            &kp N6               &kp N7                &kp N8        &kp N9             &kp N0  &kp BACKSLASH
+&trans  &kp EXCLAMATION  &kp AT  &kp HASH              &kp DOLLAR             &kp PERCENT       &kp CARET            &kp AMPERSAND         &kp ASTERISK  &kp LA(LS(SPACE))  &trans  &mt RCTRL MINUS
+&trans  &trans           &trans  &trans                &trans                 &trans            &mt2 LG(R) LG(LEFT)  &mt2 LG(W) LG(RIGHT)  &trans        &trans             &trans  &mt RSHFT EQUAL
+&trans  &trans           &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &mt2 LG(LS(T)) LG(T)  &trans        &trans             &trans  &trans
+                         &trans  &trans                &trans                 &trans            &trans               &trans                &trans        &trans
             >;
         };
 
