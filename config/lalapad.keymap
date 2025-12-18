@@ -231,12 +231,6 @@
             layers = <0>;
         };
 
-        cmd_grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <9 10>;
-            layers = <0>;
-        };
-
         cmd_equal {
             bindings = <&kp EQUAL>;
             key-positions = <6 7>;
