@@ -268,7 +268,7 @@
         };
 
         cmd_system_layer {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <0 12>;
             layers = <0>;
         };
@@ -371,21 +371,8 @@
 &mt2 LG(LS(NUMBER_4)) ESCAPE  &kp Q         &kp W         &kp E            &kp R                 &kp T           &kp Y           &kp U                      &kp I            &kp O          &kp P          &kp SQT
 &kp LCTRL                     &kp A         &kp S         &kp D            &kp F                 &kp G           &kp H           &kp J                      &kp K            &kp L          &kp SEMI       &kp RCTRL
 &kp LEFT_SHIFT                &kp Z         &kp X         &kp C            &kp V                 &kp B           &kp N           &kp M                      &kp COMMA        &kp DOT        &kp SLASH      &kp RSHIFT
-&mo 9                         &kp LEFT_ALT  &kp LEFT_GUI  &lt 8 TAB        &mt LEFT_SHIFT SPACE  &kp LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 1 ENTER      &kp RIGHT_GUI  &kp RIGHT_ALT  &mo 2
+&mo 9                         &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 TAB        &mt LEFT_SHIFT SPACE  &kp LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER      &kp RIGHT_GUI  &kp RIGHT_ALT  &mo 1
                                             &allow_end    &allow_pagedown  &allow_home           &allow_pageup   &allow_pageup   &allow_home                &allow_pagedown  &allow_end
-            >;
-        };
-
-        number_simbol {
-            display-name = "secondary_layer";
-            sensor-bindings = <&size_up_down>, <&move_desktop>;
-
-            bindings = <
-&trans  &kp N1           &kp N2  &kp N3                &kp N4                 &kp N5            &kp N6               &kp N7                &kp N8        &kp N9             &kp N0  &kp BACKSLASH
-&trans  &kp EXCLAMATION  &kp AT  &kp HASH              &kp DOLLAR             &kp PERCENT       &kp CARET            &kp AMPERSAND         &kp ASTERISK  &kp LA(LS(SPACE))  &trans  &mt RCTRL MINUS
-&trans  &trans           &trans  &trans                &trans                 &trans            &mt2 LG(R) LG(LEFT)  &mt2 LG(W) LG(RIGHT)  &trans        &trans             &trans  &mt RSHFT EQUAL
-&trans  &trans           &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &mt2 LG(LS(T)) LG(T)  &trans        &trans             &trans  &trans
-                         &trans  &trans                &trans                 &trans            &trans               &trans                &trans        &trans
             >;
         };
 
@@ -397,6 +384,19 @@
 &trans  &trans  &trans  &trans  &kp F11  &kp F12   &kp F23  &kp F24  &trans   &trans   &trans   &trans
 &trans  &trans  &trans  &trans  &trans   &kp CAPS  &trans   &trans   &trans   &trans   &trans   &trans
                 &trans  &trans  &trans   &trans    &trans   &trans   &trans   &trans
+            >;
+        };
+
+        number_simbol {
+            display-name = "secondary_layer";
+            sensor-bindings = <&size_up_down>, <&move_desktop>;
+
+            bindings = <
+&trans  &kp N1           &kp N2         &kp N3        &kp N4                &kp N5                 &kp N6               &kp N7                &kp N8        &kp N9             &kp N0  &kp BACKSLASH
+&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT            &kp CARET            &kp AMPERSAND         &kp ASTERISK  &kp LA(LS(SPACE))  &trans  &mt RCTRL MINUS
+&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt2 LG(R) LG(LEFT)  &mt2 LG(W) LG(RIGHT)  &trans        &trans             &trans  &mt RSHFT EQUAL
+&trans  &trans           &trans         &trans        &trans                &trans                 &trans               &mt2 LG(LS(T)) LG(T)  &trans        &trans             &trans  &trans
+                         &trans         &trans        &trans                &trans                 &trans               &trans                &trans        &trans
             >;
         };
 
