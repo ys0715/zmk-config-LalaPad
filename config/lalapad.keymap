@@ -371,19 +371,8 @@
 &mt2 LG(LS(NUMBER_4)) ESCAPE  &kp Q         &kp W         &kp E            &kp R                 &kp T           &kp Y           &kp U                      &kp I            &kp O          &kp P          &kp SQT
 &kp LCTRL                     &kp A         &kp S         &kp D            &kp F                 &kp G           &kp H           &kp J                      &kp K            &kp L          &kp SEMI       &kp RCTRL
 &kp LEFT_SHIFT                &kp Z         &kp X         &kp C            &kp V                 &kp B           &kp N           &kp M                      &kp COMMA        &kp DOT        &kp SLASH      &kp RSHIFT
-&mo 9                         &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 TAB        &mt LEFT_SHIFT SPACE  &kp LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER      &kp RIGHT_GUI  &kp RIGHT_ALT  &mo 1
+&mo 9                         &kp LEFT_ALT  &kp LEFT_GUI  &lt 2 TAB        &mt LEFT_SHIFT SPACE  &kp LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER      &kp RIGHT_GUI  &kp RIGHT_ALT  &mo 2
                                             &allow_end    &allow_pagedown  &allow_home           &allow_pageup   &allow_pageup   &allow_home                &allow_pagedown  &allow_end
-            >;
-        };
-
-        TERTIARY_LAYER {
-            display-name = "tertiary_layer";
-            bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5    &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &trans
-&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10   &kp F18  &kp F19  &kp F20  &kp F21  &kp F22  &trans
-&trans  &trans  &trans  &trans  &kp F11  &kp F12   &kp F23  &kp F24  &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans   &kp CAPS  &trans   &trans   &trans   &trans   &trans   &trans
-                &trans  &trans  &trans   &trans    &trans   &trans   &trans   &trans
             >;
         };
 
@@ -397,6 +386,17 @@
 &trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt2 LG(R) LG(LEFT)  &mt2 LG(W) LG(RIGHT)  &trans        &trans             &trans  &mt RSHFT EQUAL
 &trans  &trans           &trans         &trans        &trans                &trans                 &trans               &mt2 LG(LS(T)) LG(T)  &trans        &trans             &trans  &trans
                          &trans         &trans        &trans                &trans                 &trans               &trans                &trans        &trans
+            >;
+        };
+
+        TERTIARY_LAYER {
+            display-name = "tertiary_layer";
+            bindings = <
+&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5    &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &trans
+&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10   &kp F18  &kp F19  &kp F20  &kp F21  &kp F22  &trans
+&trans  &trans  &trans  &trans  &kp F11  &kp F12   &kp F23  &kp F24  &trans   &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans   &kp CAPS  &trans   &trans   &trans   &trans   &trans   &trans
+                &trans  &trans  &trans   &trans    &trans   &trans   &trans   &trans
             >;
         };
 
