@@ -6,36 +6,32 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEFAULT_LAYER   0
-#define SECONDARY_LAYER 1
-#define TERTIARY_LAYER  2
-#define SYSTEM_LAYER    3
-#define MOUSE_R_LAYER   4
-#define SCROLL_R_LAYER  5
-#define MOUSE_L_LAYER   6
-#define SCROLL_L_LAYER  7
+#define LOWSPEED_LAYER  1
+#define SIMBOL_LAYER    2
+#define TERTIARY_LAYER  3
+#define SYSTEM_LAYER    4
+#define BROWSER_LAYER   5
+#define RECTANGLE_LAYER 6
+#define SCROLL_LAYER    7
 
 // Mouse Scroll Value
-
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // cirque trackpad input&layer control
-
 &glidepoint_listener_R {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_xy_scaler 3 2>,
-        <&zip_temp_layer MOUSE_R_LAYER 500>;
+        <&zip_xy_scaler 3 2>;
 
     lowspeedmode {
-        layers = <SECONDARY_LAYER>;
+        layers = <LOWSPEED_LAYER>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_xy_scaler 3 5>,
-            <&zip_temp_layer MOUSE_R_LAYER 500>;
+            <&zip_xy_scaler 3 5>;
     };
 
     scroller {
-        layers = <SCROLL_R_LAYER>;
+        layers = <SCROLL_LAYER>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
@@ -46,19 +42,10 @@
 &glidepoint_listener_L {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-        <&zip_xy_scaler 3 2>,
-        <&zip_temp_layer MOUSE_L_LAYER 500>;
-
-    lowspeedmode {
-        layers = <SECONDARY_LAYER>;
-        input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_xy_scaler 3 4>,
-            <&zip_temp_layer MOUSE_L_LAYER 500>;
-    };
+        <&zip_xy_scaler 3 2>;
 
     scroller {
-        layers = <SCROLL_L_LAYER>;
+        layers = <DEFAULT_LAYER>;
         input-processors =
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_Y_INVERT)>,
@@ -106,6 +93,24 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+
+            tap-ms = <20>;
+        };
+
+        volume_down_up: behavior_sensor_rotate_volume_down_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "VOLUME_DOWN_UP";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_DOWN>, <&kp C_VOLUME_UP>;
+
+            tap-ms = <29>;
+        };
+
+        size_up_down: behavior_sensor_rotate_size_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SIZE_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LG(MINUS)>, <&kp LG(LS(EQUAL))>;
 
             tap-ms = <20>;
         };
@@ -173,191 +178,6 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
-
-        size_up_down: size_up_down {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "SIZE_UP_DOWN";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp LG(MINUS)>, <&kp LG(LS(EQUAL))>;
-        };
-
-        behavior_volume_down_up: behavior_volume_down_up {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "BEHAVIOR_VOLUME_DOWN_UP";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOLUME_DOWN>, <&kp C_VOLUME_UP>;
-
-            tap-ms = <29>;
-        };
-
-        move_desktop: move_desktop {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "MOVE_DESKTOP";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp LC(LEFT)>, <&kp LC(RIGHT)>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        cmd_home {
-            bindings = <&kp HOME>;
-            key-positions = <30 31>;
-            layers = <0>;
-        };
-
-        cmd_page_down {
-            bindings = <&kp PAGE_DOWN>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };
-
-        cmd_page_up {
-            bindings = <&kp PAGE_UP>;
-            key-positions = <32 33>;
-            layers = <0>;
-        };
-
-        cmd_end {
-            bindings = <&kp END>;
-            key-positions = <33 34>;
-            layers = <0>;
-        };
-
-        cmb_backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <9 8>;
-            layers = <0>;
-        };
-
-        cmd_equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <6 7>;
-            layers = <0>;
-        };
-
-        cmd_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <7 8>;
-            layers = <0>;
-        };
-
-        cmd_left_click {
-            bindings = <&mkp LCLK>;
-            key-positions = <16 17>;
-            layers = <0 4>;
-        };
-
-        cmd_right_click {
-            bindings = <&mkp RCLK>;
-            key-positions = <29 28>;
-            layers = <0 4>;
-        };
-
-        cmd_middle_click {
-            bindings = <&mkp MCLK>;
-            key-positions = <5 4>;
-            layers = <0 4>;
-        };
-
-        cmb_enter {
-            bindings = <&kp ENTER>;
-            key-positions = <29 41>;
-            layers = <0>;
-        };
-
-        cmd_system_layer {
-            bindings = <&mo 4>;
-            key-positions = <0 12>;
-            layers = <0>;
-        };
-
-        cmd_left {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <18 19>;
-            layers = <0>;
-        };
-
-        cmd_down {
-            bindings = <&kp DOWN_ARROW>;
-            key-positions = <19 20>;
-            layers = <0>;
-        };
-
-        cmd_up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <20 21>;
-            layers = <0>;
-        };
-
-        cmd_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <21 22>;
-            layers = <0>;
-        };
-
-        cmd_mouse_left_click {
-            bindings = <&mkp LCLK>;
-            key-positions = <19 20>;
-            layers = <4 6>;
-        };
-
-        cmd_mouse_right_click {
-            bindings = <&mkp RCLK>;
-            key-positions = <20 21>;
-            layers = <4 6>;
-        };
-
-        mouse_middle_click {
-            bindings = <&mkp MCLK>;
-            key-positions = <19 20 21>;
-        };
-
-        cmd_scroll_layer_right {
-            bindings = <&mo 5>;
-            key-positions = <21 22>;
-            layers = <4>;
-        };
-
-        cmd_scroll_layer_left {
-            bindings = <&mo 7>;
-            key-positions = <21 22>;
-            layers = <6>;
-        };
-
-        cmd_ctrl_space {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <42 30>;
-            layers = <0>;
-        };
-
-        cmb_rectangle_layer {
-            bindings = <&mo 10>;
-            key-positions = <27 28>;
-            layers = <0>;
-        };
-
-        cmd_mcr {
-            bindings = <&mcr_mcr>;
-            key-positions = <10 11>;
-            layers = <0>;
-        };
-
-        cmd_layer_5 {
-            bindings = <&mo 5>;
-            key-positions = <16 15>;
-            layers = <0 4>;
-        };
-    };
-
-    macros {
-        mcr_mcr: mcr_mcr {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp N1 &kp N5 &kp N6 &kp N4 &kp Y &kp U>;
-            label = "MCR_MCR";
-        };
     };
 
     keymap {
@@ -365,7 +185,7 @@
 
         DEFAULT_LAYER {
             display-name = "Default";
-            sensor-bindings = <&behavior_volume_down_up>, <&scroll_up_down>;
+            sensor-bindings = <&volume_down_up>, <&scroll_up_down>;
 
             bindings = <
 &mt2 LG(LS(NUMBER_4)) ESCAPE  &kp Q         &kp W         &kp E            &kp R                 &kp T           &kp Y           &kp U                      &kp I            &kp O          &kp P          &kp SQT
@@ -376,9 +196,22 @@
             >;
         };
 
-        number_simbol {
-            display-name = "secondary_layer";
-            sensor-bindings = <&size_up_down>, <&move_desktop>;
+        LOWSPEED_LAYER {
+            display-name = "Lowspeed_layer";
+            sensor-bindings = <&size_up_down>, <&size_up_down>;
+
+            bindings = <
+&kp ESCAPE  &kp LS(LG(NUMBER_4))  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)              &kp LG(T)      &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP    &kp END    &kp LG(LS(P))         &kp BACKSPACE
+&trans      &kp LG(A)             &kp LG(S)  &kp LC(DOWN)      &kp LG(F)              &kp LG(LS(T))  &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &kp LS(LA(LEFT_GUI))  &trans
+&trans      &kp LG(Z)             &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)   &kp LG(LEFT)   &trans     &trans          &trans         &trans     &kp LG(SLASH)         &trans
+&trans      &trans                &trans     &trans            &kp LG(LA(BACKSPACE))  &kp LG(RIGHT)  &kp LG(J)  &kp LC(LEFT)    &kp LC(RIGHT)  &trans     &trans                &trans
+                                  &trans     &trans            &trans                 &trans         &trans     &trans          &trans         &trans
+            >;
+        };
+
+        SIMBOL_LAYER {
+            display-name = "Simbol_layer";
+            sensor-bindings = <&scroll_up_down>, <&volume_down_up>;
 
             bindings = <
 &trans  &kp N1           &kp N2         &kp N3        &kp N4                &kp N5                 &kp N6               &kp N7                &kp N8        &kp N9             &kp N0  &kp BACKSLASH
@@ -390,7 +223,7 @@
         };
 
         TERTIARY_LAYER {
-            display-name = "tertiary_layer";
+            display-name = "Tertiary_layer";
             bindings = <
 &trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5    &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &trans
 &trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10   &kp F18  &kp F19  &kp F20  &kp F21  &kp F22  &trans
@@ -401,7 +234,7 @@
         };
 
         SYSTEM_LAYER {
-            display-name = "system_layer";
+            display-name = "System_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans  &trans  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
@@ -411,8 +244,8 @@
             >;
         };
 
-        MOUSE_R_LAYER {
-            display-name = "mouse_r_layer";
+        BROWSER_LAYER {
+            display-name = "Browser_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -422,68 +255,24 @@
             >;
         };
 
-        SCROLL_R_LAYER {
-            display-name = "scroll_r_layer";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        MOUSE_L_LAYER {
-            display-name = "mouse_l_layer";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        SCROLL_L_LAYER {
-            display-name = "scroll_l_layer";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        command {
-            bindings = <
-&kp ESCAPE  &kp LS(LG(NUMBER_4))  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)              &kp LG(T)      &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP    &kp END    &kp LG(LS(P))         &kp BACKSPACE
-&trans      &kp LG(A)             &kp LG(S)  &kp LC(DOWN)      &kp LG(F)              &kp LG(LS(T))  &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &kp LS(LA(LEFT_GUI))  &trans
-&trans      &kp LG(Z)             &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)   &kp LG(LEFT)   &trans     &trans          &trans         &trans     &kp LG(SLASH)         &trans
-&trans      &trans                &trans     &trans            &kp LG(LA(BACKSPACE))  &kp LG(RIGHT)  &kp LG(J)  &kp LC(LEFT)    &kp LC(RIGHT)  &trans     &trans                &trans
-                                  &trans     &trans            &trans                 &trans         &trans     &trans          &trans         &trans
-            >;
-
-            sensor-bindings = <&size_up_down>, <&move_desktop>;
-        };
-
-        numbers {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &kp KP_ASTERISK  &kp KP_EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp KP_SLASH     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DOT       &kp COMMA        &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp COLON        &trans           &kp KP_NUMBER_0  &trans        &trans           &trans
-                &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans
-            >;
-        };
-
-        rectangle_layer {
+        RECTANGLE_LAYER {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LC(UP_ARROW))    &kp LC(LA(U))          &kp LC(LA(I))      &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LC(DOWN))        &kp LA(LC(J))          &kp LA(LC(K))      &trans         &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LC(RIGHT))       &kp LA(LC(D))          &kp LA(LC(F))      &kp LC(LA(G))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(BACKSPACE))  &kp LA(LC(ENTER))  &trans         &trans  &trans
                 &trans  &trans  &trans  &trans  &trans                  &trans                 &trans             &trans
+            >;
+        };
+
+        SCROLL_LAYER {
+            display-name = "Scroll_layer";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
