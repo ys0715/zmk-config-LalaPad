@@ -316,6 +316,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans         &trans     &trans     &trans  &trans
                 &trans  &trans  &trans  &trans  &trans        &trans         &trans     &trans
             >;
+
+            sensor-bindings = <&volume_down_up>, <&size_up_down>;
         };
 
         RECTANGLE_LAYER {
