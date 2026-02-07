@@ -15,9 +15,11 @@
 #define SCROLL_LAYER    7
 
 // Mouse Scroll Value
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 // cirque trackpad input&layer control
+
 &glidepoint_listener_R {
     input-processors =
         <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -188,11 +190,11 @@
             sensor-bindings = <&volume_down_up>, <&scroll_up_down>;
 
             bindings = <
-&mt2 LG(LS(NUMBER_4)) ESCAPE  &kp Q         &kp W         &kp E            &kp R                 &kp T           &kp Y           &kp U                      &kp I            &kp O          &kp P          &kp SQT
-&kp LCTRL                     &kp A         &kp S         &kp D            &kp F                 &kp G           &kp H           &kp J                      &kp K            &kp L          &kp SEMI       &kp RCTRL
-&kp LEFT_SHIFT                &kp Z         &kp X         &kp C            &kp V                 &kp B           &kp N           &kp M                      &kp COMMA        &kp DOT        &kp SLASH      &kp RSHIFT
-&mo 9                         &kp LEFT_ALT  &kp LEFT_GUI  &lt 2 TAB        &mt LEFT_SHIFT SPACE  &kp LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 3 ENTER      &kp RIGHT_GUI  &kp RIGHT_ALT  &mo 2
-                                            &allow_end    &allow_pagedown  &allow_home           &allow_pageup   &allow_pageup   &allow_home                &allow_pagedown  &allow_end
+&kp ESCAPE      &kp Q         &kp W         &kp E            &kp R                 &kp T           &kp Y           &kp U                      &kp I            &kp O          &kp P          &kp SQT
+&kp LCTRL       &kp A         &kp S         &kp D            &kp F                 &kp G           &kp H           &kp J                      &kp K            &kp L          &kp SEMI       &kp RCTRL
+&kp LEFT_SHIFT  &kp Z         &kp X         &kp C            &kp V                 &kp B           &kp N           &kp M                      &kp COMMA        &kp DOT        &kp SLASH      &kp RSHIFT
+&mo 9           &kp LEFT_ALT  &kp LEFT_GUI  &lt 1 TAB        &mt LEFT_SHIFT SPACE  &kp LANGUAGE_2  &kp LANGUAGE_1  &mt RIGHT_SHIFT BACKSPACE  &lt 2 ENTER      &kp RIGHT_GUI  &kp RIGHT_ALT  &mo 2
+                              &allow_end    &allow_pagedown  &allow_home           &allow_pageup   &allow_pageup   &allow_home                &allow_pagedown  &allow_end
             >;
         };
 
@@ -201,11 +203,11 @@
             sensor-bindings = <&size_up_down>, <&size_up_down>;
 
             bindings = <
-&kp ESCAPE  &kp LS(LG(NUMBER_4))  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)              &kp LG(T)      &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP    &kp END    &kp LG(LS(P))         &kp BACKSPACE
-&trans      &kp LG(A)             &kp LG(S)  &kp LC(DOWN)      &kp LG(F)              &kp LG(LS(T))  &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT  &kp LS(LA(LEFT_GUI))  &trans
-&trans      &kp LG(Z)             &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)   &kp LG(LEFT)   &trans     &trans          &trans         &trans     &kp LG(SLASH)         &trans
-&trans      &trans                &trans     &trans            &kp LG(LA(BACKSPACE))  &kp LG(RIGHT)  &kp LG(J)  &kp LC(LEFT)    &kp LC(RIGHT)  &trans     &trans                &trans
-                                  &trans     &trans            &trans                 &trans         &trans     &trans          &trans         &trans
+&trans  &kp LS(LG(NUMBER_4))  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)             &kp LG(T)  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(A)             &kp LG(S)  &kp LC(DOWN)      &kp LG(F)             &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(Z)             &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans     &trans            &trans                &trans     &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans     &trans            &trans                &trans     &trans  &trans  &trans  &trans
             >;
         };
 
@@ -214,11 +216,11 @@
             sensor-bindings = <&scroll_up_down>, <&volume_down_up>;
 
             bindings = <
-&trans  &kp N1           &kp N2         &kp N3        &kp N4                &kp N5                 &kp N6               &kp N7                &kp N8        &kp N9             &kp N0  &kp BACKSLASH
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT            &kp CARET            &kp AMPERSAND         &kp ASTERISK  &kp LA(LS(SPACE))  &trans  &mt RCTRL MINUS
-&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt2 LG(R) LG(LEFT)  &mt2 LG(W) LG(RIGHT)  &trans        &trans             &trans  &mt RSHFT EQUAL
-&trans  &trans           &trans         &trans        &trans                &trans                 &trans               &mt2 LG(LS(T)) LG(T)  &trans        &trans             &trans  &trans
-                         &trans         &trans        &trans                &trans                 &trans               &trans                &trans        &trans
+&trans  &kp N1           &kp N2         &kp N3        &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0  &kp GRAVE
+&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &mt RCTRL BACKSLASH
+&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp MINUS       &trans        &trans           &trans  &trans
+&trans  &trans           &trans         &trans        &trans                &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans          &trans        &trans           &trans  &trans
+                         &trans         &trans        &trans                &trans                 &trans             &trans          &trans        &trans
             >;
         };
 
