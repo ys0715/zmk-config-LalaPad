@@ -232,6 +232,12 @@
             key-positions = <21 22>;
             layers = <0>;
         };
+
+        mcr {
+            bindings = <&mcr_mcr>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -240,6 +246,13 @@
             #binding-cells = <0>;
             bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0>;
             label = "MCR_00";
+        };
+
+        mcr_mcr: mcr_mcr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp N1 &kp N5 &kp N6 &kp N4 &kp Y &kp U>;
+            label = "MCR_MCR";
         };
     };
 
