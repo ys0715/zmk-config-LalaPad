@@ -208,6 +208,30 @@
             key-positions = <9 10>;
             layers = <0>;
         };
+
+        left_click {
+            bindings = <&mkp LCLK>;
+            key-positions = <19 20>;
+            layers = <0 1>;
+        };
+
+        right_click {
+            bindings = <&mkp RCLK>;
+            key-positions = <21 20>;
+            layers = <0 1>;
+        };
+
+        middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <19 20 21>;
+            layers = <0 1>;
+        };
+
+        scroll {
+            bindings = <&none>;
+            key-positions = <21 22>;
+            layers = <0 1>;
+        };
     };
 
     macros {
@@ -227,11 +251,11 @@
             sensor-bindings = <&volume_down_up>, <&scroll_up_down>;
 
             bindings = <
-&mt2 LS(LG(NUMBER_4)) ESCAPE  &kp Q         &kp W         &kp E            &kp R        &kp T           &kp Y           &kp U          &kp I            &kp O               &kp P                      &kp SQT
-&mt LEFT_GUI TAB              &kp A         &kp S         &kp D            &kp F        &kp G           &kp H           &kp J          &kp K            &kp L               &kp SEMI                   &mt RCTRL ENTER
-&kp LSHIFT                    &kp Z         &kp X         &kp C            &kp V        &kp B           &kp N           &kp M          &kp COMMA        &kp DOT             &kp SLASH                  &mt RSHIFT UP_ARROW
-&kp LCTRL                     &kp LEFT_ALT  &kp LEFT_GUI  &mo 1            &kp SPACE    &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSPACE  &mo 2            &mt RIGHT_GUI LEFT  &mt RIGHT_ALT RIGHT_ARROW  &mt RCTRL DOWN_ARROW
-                                            &allow_end    &allow_pagedown  &allow_home  &allow_pageup   &allow_pageup   &allow_home    &allow_pagedown  &allow_end
+&mt2 LS(LG(NUMBER_4)) ESCAPE  &kp Q         &kp W         &kp E            &kp R        &kp T             &kp Y             &kp U          &kp I            &kp O               &kp P                      &kp SQT
+&mt LEFT_GUI TAB              &kp A         &kp S         &kp D            &kp F        &kp G             &kp H             &kp J          &kp K            &kp L               &kp SEMI                   &mt RCTRL ENTER
+&kp LSHIFT                    &kp Z         &kp X         &kp C            &kp V        &kp B             &kp N             &kp M          &kp COMMA        &kp DOT             &kp SLASH                  &mt RSHIFT UP_ARROW
+&kp LCTRL                     &kp LEFT_ALT  &kp LEFT_GUI  &mo 1            &kp SPACE    &lt 6 LANGUAGE_2  &lt 4 LANGUAGE_1  &kp BACKSPACE  &mo 2            &mt RIGHT_GUI LEFT  &mt RIGHT_ALT RIGHT_ARROW  &mt RCTRL DOWN_ARROW
+                                            &allow_end    &allow_pagedown  &allow_home  &allow_pageup     &allow_pageup     &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
