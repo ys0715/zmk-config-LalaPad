@@ -361,11 +361,11 @@
         BROWSER_LAYER {
             display-name = "Browser_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)     &kp LG(EQUAL)    &kp LG(MINUS)      &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LG(RIGHT)    &kp LC(TAB)        &kp LC(LS(TAB))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(W)     &kp C_VOLUME_UP  &kp C_VOLUME_DOWN  &trans           &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans           &trans             &trans           &trans  &trans
-                &trans  &trans  &trans  &trans  &trans        &trans           &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)     &kp LG(MINUS)      &kp LG(EQUAL)    &kp LG(LS(T))    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LG(RIGHT)      &kp LC(TAB)      &kp LC(LS(TAB))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(W)     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(T)        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans             &trans           &trans           &trans  &trans
+                &trans  &trans  &trans  &trans  &trans        &trans             &trans           &trans
             >;
 
             sensor-bindings = <&volume_down_up>, <&size_up_down>;
