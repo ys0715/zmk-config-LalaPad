@@ -315,7 +315,7 @@
             sensor-bindings = <&scroll_up_down>, <&volume_down_up>;
 
             bindings = <
-&trans  &kp N1           &kp N2                  &kp N3                 &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0  &mt2 SQT GRAVE
+&trans  &kp N1           &kp N2                  &kp N3                 &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0  &trans
 &trans  &kp EXCLAMATION  &kp AT                  &kp HASH               &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
 &trans  &mt LCTRL CARET  &mt LEFT_ALT AMPERSAND  &mt LEFT_GUI ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp MINUS       &trans        &trans           &trans  &trans
 &trans  &trans           &trans                  &mo 3                  &trans                &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans          &trans        &trans           &trans  &trans
