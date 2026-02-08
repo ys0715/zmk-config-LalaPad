@@ -217,9 +217,21 @@
             layers = <0>;
         };
 
+        quote {
+            bindings = <&kp SQT>;
+            key-positions = <9 10>;
+            layers = <0>;
+        };
+
         grave {
             bindings = <&kp GRAVE>;
             key-positions = <9 7 8>;
+            layers = <0>;
+        };
+
+        lang {
+            bindings = <&lang2_lang1>;
+            key-positions = <18 19>;
             layers = <0>;
         };
 
@@ -256,18 +268,6 @@
         esc_ss {
             bindings = <&mt2 LG(LS(NUMBER_4)) ESCAPE>;
             key-positions = <1 2>;
-            layers = <0>;
-        };
-
-        lang {
-            bindings = <&lang2_lang1>;
-            key-positions = <18 19>;
-            layers = <0>;
-        };
-
-        quote {
-            bindings = <&kp SQT>;
-            key-positions = <9 10>;
             layers = <0>;
         };
 
