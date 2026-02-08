@@ -180,6 +180,13 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
+        lang2_lang1: lang2_lang1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LANG2_LANG1";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>, <&kp LC(SPACE)>;
+        };
     };
 
     combos {
@@ -205,7 +212,7 @@
 
         grave {
             bindings = <&kp GRAVE>;
-            key-positions = <9 10>;
+            key-positions = <9 7 8>;
             layers = <0>;
         };
 
@@ -242,6 +249,18 @@
         esc_ss {
             bindings = <&mt2 LG(LS(NUMBER_4)) ESCAPE>;
             key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        lang {
+            bindings = <&lang2_lang1>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        quote {
+            bindings = <&kp SQT>;
+            key-positions = <9 10>;
             layers = <0>;
         };
     };
@@ -283,11 +302,11 @@
             sensor-bindings = <&size_up_down>, <&size_up_down>;
 
             bindings = <
-&kp LC(SPACE)      &kp LG(Q)  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)             &kp LG(T)           &mt2 PAGE_UP HOME  &kp UP_ARROW    &mt2 PAGE_DOWN END  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&kp LA(LS(SPACE))  &kp LG(A)  &kp LG(S)  &kp LC(DOWN)      &kp LG(F)             &kp LG(LS(T))       &kp LEFT           &kp DOWN_ARROW  &kp RIGHT           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans             &kp LG(Z)  &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)  &kp LC(LEFT_ARROW)  &trans             &trans          &trans              &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans             &trans     &trans     &trans            &trans                &kp LC(RIGHT)       &trans             &trans          &mo 3               &kp KP_NUMBER_0  &mcr_00          &dot_comma
-                              &trans     &trans            &trans                &trans              &trans             &trans          &trans              &trans
+&trans  &kp LG(Q)        &kp LG(W)           &kp LC(UP_ARROW)  &kp LG(R)             &kp LG(T)           &mt2 PAGE_UP HOME  &kp UP_ARROW    &mt2 PAGE_DOWN END  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&trans  &kp LG(A)        &kp LG(S)           &kp LC(DOWN)      &kp LG(F)             &kp LG(LS(T))       &kp LEFT           &kp DOWN_ARROW  &kp RIGHT           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans  &mt LCTRL LG(Z)  &mt LEFT_ALT LG(X)  &mt LCMD LG(C)    &mt2 LG(LS(V)) LG(V)  &kp LC(LEFT_ARROW)  &trans             &trans          &trans              &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&trans  &trans           &trans              &trans            &trans                &kp LC(RIGHT)       &trans             &trans          &mo 3               &kp KP_NUMBER_0  &mcr_00          &dot_comma
+                         &trans              &trans            &trans                &trans              &trans             &trans          &trans              &trans
             >;
         };
 
@@ -296,11 +315,11 @@
             sensor-bindings = <&scroll_up_down>, <&volume_down_up>;
 
             bindings = <
-&trans  &kp N1           &kp N2         &kp N3        &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0  &mt2 SQT GRAVE
-&trans  &kp EXCLAMATION  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &kp BACKSLASH
-&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp MINUS       &trans        &trans           &trans  &trans
-&trans  &trans           &trans         &mo 3         &trans                &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans          &trans        &trans           &trans  &trans
-                         &trans         &trans        &trans                &trans                 &trans             &trans          &trans        &trans
+&trans  &kp N1           &kp N2                  &kp N3                 &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0  &mt2 SQT GRAVE
+&trans  &kp EXCLAMATION  &kp AT                  &kp HASH               &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &mt LCTRL CARET  &mt LEFT_ALT AMPERSAND  &mt LEFT_GUI ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp MINUS       &trans        &trans           &trans  &trans
+&trans  &trans           &trans                  &mo 3                  &trans                &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans          &trans        &trans           &trans  &trans
+                         &trans                  &trans                 &trans                &trans                 &trans             &trans          &trans        &trans
             >;
         };
 
