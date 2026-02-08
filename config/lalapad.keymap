@@ -187,6 +187,13 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>, <&kp LC(SPACE)>;
         };
+
+        layer6_layer4: layer6_layer4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER6_LAYER4";
+            #binding-cells = <0>;
+            bindings = <&mo 6>, <&mo 4>;
+        };
     };
 
     combos {
@@ -261,6 +268,12 @@
         quote {
             bindings = <&kp SQT>;
             key-positions = <9 10>;
+            layers = <0>;
+        };
+
+        layer_6_4 {
+            bindings = <&layer6_layer4>;
+            key-positions = <4 5>;
             layers = <0>;
         };
     };
