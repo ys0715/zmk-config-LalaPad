@@ -315,11 +315,11 @@
             sensor-bindings = <&size_up_down>, <&size_up_down>;
 
             bindings = <
-&trans  &kp LG(Q)  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)             &kp LG(T)           &mt2 PAGE_UP HOME  &kp UP_ARROW    &mt2 PAGE_DOWN END  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans  &kp LG(A)  &kp LG(S)  &kp LC(DOWN)      &kp LG(F)             &kp LG(LS(T))       &kp LEFT           &kp DOWN_ARROW  &kp RIGHT           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)  &kp LC(LEFT_ARROW)  &trans             &trans          &trans              &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans  &trans     &trans     &trans            &trans                &kp LC(RIGHT)       &trans             &trans          &mo 3               &kp KP_NUMBER_0  &mcr_00          &dot_comma
-                   &trans     &trans            &trans                &trans              &trans             &trans          &trans              &trans
+&trans  &kp LG(Q)  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)             &kp LG(T)           &trans  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
+&trans  &kp LG(A)  &kp LG(S)  &kp LC(DOWN)      &kp LG(F)             &kp LG(LS(T))       &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)  &kp LC(LEFT_ARROW)  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
+&trans  &trans     &trans     &trans            &trans                &kp LC(RIGHT)       &trans  &trans  &mo 3   &kp KP_NUMBER_0  &mcr_00          &dot_comma
+                   &trans     &trans            &trans                &trans              &trans  &trans  &trans  &trans
             >;
         };
 
