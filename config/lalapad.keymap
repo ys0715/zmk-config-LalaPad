@@ -126,15 +126,6 @@
             label = "DOT_COMMA";
         };
 
-        pls_minus: pls_minus {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp PLUS>, <&kp MINUS>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            label = "PLS_MINUS";
-        };
-
         allow_pageup: allow_pageup {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -232,6 +223,30 @@
             layers = <0>;
         };
 
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <6 8 7>;
+            layers = <0>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <8 9 7>;
+            layers = <0>;
+        };
+
+        quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <8 9 10>;
+            layers = <0>;
+        };
+
+        mcr {
+            bindings = <&mcr_mcr>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
+
         left_click {
             bindings = <&mkp LCLK>;
             key-positions = <19 20>;
@@ -256,33 +271,9 @@
             layers = <0>;
         };
 
-        mcr {
-            bindings = <&mcr_mcr>;
-            key-positions = <10 11>;
-            layers = <0>;
-        };
-
         esc_ss {
             bindings = <&mt2 LG(LS(NUMBER_4)) ESCAPE>;
             key-positions = <1 2>;
-            layers = <0>;
-        };
-
-        left_bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <6 8 7>;
-            layers = <0>;
-        };
-
-        right_bracket {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <8 9 7>;
-            layers = <0>;
-        };
-
-        quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <8 9 10>;
             layers = <0>;
         };
     };
