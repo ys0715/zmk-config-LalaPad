@@ -279,13 +279,6 @@
     };
 
     macros {
-        mcr_00: mcr_00 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0>;
-            label = "MCR_00";
-        };
-
         mcr_mcr: mcr_mcr {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -315,11 +308,11 @@
             sensor-bindings = <&size_up_down>, <&size_up_down>;
 
             bindings = <
-&trans  &kp LG(Q)  &kp LG(W)  &kp LC(UP_ARROW)  &kp LG(R)             &kp LG(T)           &trans  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9
-&trans  &kp LG(A)  &kp LG(S)  &kp LC(DOWN)      &kp LG(F)             &kp LG(LS(T))       &trans  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)         &mt2 LG(LS(V)) LG(V)  &kp LC(LEFT_ARROW)  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3
-&trans  &trans     &trans     &trans            &trans                &kp LC(RIGHT)       &trans  &trans  &mo 3   &kp KP_NUMBER_0  &mcr_00          &dot_comma
-                   &trans     &trans            &trans                &trans              &trans  &trans  &trans  &trans
+&trans  &kp LG(Q)  &kp LG(W)  &kp LANGUAGE_1  &kp LG(R)             &kp LG(T)             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PAGE_UP  &kp PAGE_DOWN  &mt2 INS DELETE
+&trans  &kp LG(A)  &kp LG(S)  &kp LANGUAGE_2  &kp LG(F)             &kp LS(LA(SPACE))     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HOME     &kp END        &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)       &mt2 LG(LS(V)) LG(V)  &kp LG(BACKSPACE)     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &dot_comma   &kp UP_ARROW   &trans
+&trans  &trans     &trans     &trans          &mcr_mcr              &kp LS(LG(NUMBER_4))  &kp KP_NUMBER_0  &trans           &mo 3            &kp LEFT     &kp DOWN       &kp RIGHT
+                   &trans     &trans          &trans                &trans                &trans           &trans           &trans           &trans
             >;
         };
 
@@ -328,11 +321,11 @@
             sensor-bindings = <&scroll_up_down>, <&volume_down_up>;
 
             bindings = <
-&trans  &kp N1           &kp N2    &kp N3        &kp N4                &kp N5                 &kp N6             &kp N7              &kp N8        &kp N9           &kp N0  &trans
-&trans  &kp EXCLAMATION  &kp AT    &kp HASH      &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW      &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &kp CARET        &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt2 PAGE_UP HOME  &mt2 PAGE_DOWN END  &trans        &trans           &trans  &trans
-&trans  &trans           &trans    &mo 3         &trans                &trans                 &trans             &trans              &trans        &trans           &trans  &trans
-                         &trans    &trans        &trans                &trans                 &trans             &trans              &trans        &trans
+&trans  &kp N1           &kp N2    &kp N3        &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0         &mt2 SINGLE_QUOTE GRAVE
+&trans  &kp EXCLAMATION  &kp AT    &kp HASH      &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON  &kp BACKSLASH
+&trans  &kp CARET        &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp MINUS       &trans        &trans           &trans         &trans
+&trans  &trans           &trans    &mo 3         &trans                &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans          &trans        &trans           &trans         &trans
+                         &trans    &trans        &trans                &trans                 &trans             &trans          &trans        &trans
             >;
         };
 
