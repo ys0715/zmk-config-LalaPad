@@ -194,6 +194,15 @@
             #binding-cells = <0>;
             bindings = <&lt 6 LEFT_PARENTHESIS>, <&lt 4 LEFT_BRACKET>;
         };
+
+        pdn_cln: pdn_cln {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PAGE_DOWN>, <&kp COLON>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "PDN_CLN";
+        };
     };
 
     combos {
@@ -308,10 +317,10 @@
             sensor-bindings = <&size_up_down>, <&size_up_down>;
 
             bindings = <
-&trans  &kp LG(Q)  &kp LG(W)  &kp LANGUAGE_1  &kp LG(R)             &kp LG(T)             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PAGE_UP  &kp PAGE_DOWN  &mt2 INS DELETE
-&trans  &kp LG(A)  &kp LG(S)  &kp LANGUAGE_2  &kp LG(F)             &kp LS(LA(SPACE))     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp HOME     &kp END        &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)       &mt2 LG(LS(V)) LG(V)  &kp LG(BACKSPACE)     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &dot_comma   &kp UP_ARROW   &trans
-&trans  &trans     &trans     &trans          &mcr_mcr              &kp LS(LG(NUMBER_4))  &kp KP_NUMBER_0  &trans           &mo 3            &kp LEFT     &kp DOWN       &kp RIGHT
+&trans  &kp LG(Q)  &kp LG(W)  &kp LANGUAGE_1  &kp LG(R)             &kp LG(T)             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp HOME    &kp PAGE_UP               &mt2 INS DELETE
+&trans  &kp LG(A)  &kp LG(S)  &kp LANGUAGE_2  &kp LG(F)             &kp LS(LA(SPACE))     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp END     &mt2 PAGE_DOWN SEMICOLON  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)       &mt2 LG(LS(V)) LG(V)  &kp LG(BACKSPACE)     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &dot_comma  &kp UP_ARROW              &trans
+&trans  &trans     &trans     &trans          &mcr_mcr              &kp LS(LG(NUMBER_4))  &kp KP_NUMBER_0  &trans           &mo 3            &kp LEFT    &kp DOWN                  &kp RIGHT
                    &trans     &trans          &trans                &trans                &trans           &trans           &trans           &trans
             >;
         };
