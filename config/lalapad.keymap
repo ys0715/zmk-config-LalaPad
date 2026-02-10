@@ -377,12 +377,6 @@
             key-positions = <18 19>;
             layers = <0>;
         };
-
-        esc_ss {
-            bindings = <&mt2 LG(LS(NUMBER_4)) ESCAPE>;
-            key-positions = <1 2>;
-            layers = <0>;
-        };
     };
 
     macros {
