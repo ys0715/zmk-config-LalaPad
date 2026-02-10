@@ -361,7 +361,7 @@
                 &trans  &trans  &trans  &trans  &trans        &trans             &trans           &trans
             >;
 
-            sensor-bindings = <&volume_down_up>, <&size_up_down>;
+            sensor-bindings = <&volume_down_up>, <&scroll_down_up>;
         };
 
         RECTANGLE_LAYER {
