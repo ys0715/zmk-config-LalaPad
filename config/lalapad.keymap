@@ -194,6 +194,114 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             label = "PDN_CLN";
         };
+
+        F1_F13: F1_F13 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F1>, <&kp F13>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F1_F13";
+        };
+
+        F2_F14: F2_F14 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F2>, <&kp F14>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F2_F14";
+        };
+
+        F3_F15: F3_F15 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F3>, <&kp F15>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F3_F15";
+        };
+
+        F4_F16: F4_F16 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F4>, <&kp F16>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F4_F16";
+        };
+
+        F5_F17: F5_F17 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F5>, <&kp F17>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F5_F17";
+        };
+
+        F6_F18: F6_F18 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F6>, <&kp F18>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F6_F18";
+        };
+
+        F7_F19: F7_F19 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F7>, <&kp F19>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F7_F19";
+        };
+
+        F8_F20: F8_F20 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F8>, <&kp F20>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F8_F20";
+        };
+
+        F9_F21: F9_F21 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F9>, <&kp F21>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F9_F21";
+        };
+
+        F10_F22: F10_F22 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F10>, <&kp F22>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F10_F22";
+        };
+
+        F11_F23: F11_F23 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F11>, <&kp F23>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F11_F23";
+        };
+
+        F12_F24: F12_F24 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp F12>, <&kp F24>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            label = "F12_F24";
+        };
     };
 
     combos {
@@ -308,11 +416,11 @@
             sensor-bindings = <&size_up_down>, <&size_up_down>;
 
             bindings = <
-&trans  &kp LG(Q)  &kp LG(W)  &kp LANGUAGE_1  &kp LG(R)             &kp LG(T)             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp HOME    &kp PAGE_UP   &mt2 INS DELETE
-&trans  &kp LG(A)  &kp LG(S)  &kp LANGUAGE_2  &kp LG(F)             &kp LS(LA(SPACE))     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp END     &pdn_cln      &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)       &mt2 LG(LS(V)) LG(V)  &kp LG(BACKSPACE)     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &dot_comma  &kp UP_ARROW  &trans
-&trans  &trans     &trans     &trans          &mcr_mcr              &kp LS(LG(NUMBER_4))  &kp KP_NUMBER_0  &trans           &mo 3            &kp LEFT    &kp DOWN      &kp RIGHT
-                   &trans     &trans          &trans                &trans                &trans           &trans           &trans           &trans
+&trans        &kp LG(Q)  &kp LG(W)  &kp LANGUAGE_1  &kp LG(R)             &kp LG(T)             &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp HOME    &kp PAGE_UP   &mt2 INS DELETE
+&kp CAPSLOCK  &kp LG(A)  &kp LG(S)  &kp LANGUAGE_2  &kp LG(F)             &kp LS(LA(SPACE))     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp END     &pdn_cln      &trans
+&trans        &kp LG(Z)  &kp LG(X)  &kp LG(C)       &mt2 LG(LS(V)) LG(V)  &kp LG(BACKSPACE)     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &dot_comma  &kp UP_ARROW  &trans
+&trans        &trans     &trans     &trans          &mcr_mcr              &kp LS(LG(NUMBER_4))  &kp KP_NUMBER_0  &trans           &mo 3            &kp LEFT    &kp DOWN      &kp RIGHT
+                         &trans     &trans          &trans                &trans                &trans           &trans           &trans           &trans
             >;
         };
 
@@ -332,11 +440,11 @@
         TERTIARY_LAYER {
             display-name = "Tertiary_layer";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5    &kp F13  &kp F14  &kp F15  &kp F16  &kp F17  &trans
-&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10   &kp F18  &kp F19  &kp F20  &kp F21  &kp F22  &trans
-&trans  &trans  &trans  &trans  &kp F11  &kp F12   &kp F23  &kp F24  &trans   &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans   &kp CAPS  &trans   &trans   &trans   &trans   &trans   &trans
-                &trans  &trans  &trans   &trans    &trans   &trans   &trans   &trans
+&F1_F13  &F2_F14  &F3_F15  &F4_F16   &F5_F17   &F6_F18   &out OUT_TOG  &out OUT_BLE  &out OUT_USB  &trans        &trans          &trans
+&F7_F19  &F8_F20  &F9_F21  &F10_F22  &F11_F23  &F12_F24  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans
+&trans   &trans   &trans   &trans    &trans    &trans    &trans        &trans        &trans        &trans        &trans          &trans
+&trans   &trans   &trans   &trans    &trans    &trans    &bootloader   &sys_reset    &trans        &bt BT_CLR    &bt BT_CLR_ALL  &studio_unlock
+                  &trans   &trans    &trans    &trans    &trans        &trans        &trans        &trans
             >;
         };
 
