@@ -425,7 +425,7 @@
 &trans  &kp N1           &kp N2    &kp N3        &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0         &kp GRAVE
 &trans  &kp EXCLAMATION  &kp AT    &kp HASH      &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON  &trans
 &trans  &kp CARET        &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp MINUS       &trans        &trans           &kp BACKSLASH  &trans
-&trans  &trans           &trans    &trans        &trans                &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &kp LC(SPACE)   &trans        &trans           &trans         &trans
+&trans  &trans           &trans    &trans        &trans                &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans          &trans        &trans           &trans         &trans
                          &trans    &trans        &trans                &trans                 &trans             &trans          &trans        &trans
             >;
         };
