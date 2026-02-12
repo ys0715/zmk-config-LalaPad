@@ -175,7 +175,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LANG2_LANG1";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>, <&kp LC(SPACE)>;
+            bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>;
         };
 
         pdn_cln: pdn_cln {
@@ -422,11 +422,11 @@
             sensor-bindings = <&scroll_up_down>, <&volume_down_up>;
 
             bindings = <
-&mt2 LA(GRAVE) LC(SPACE)  &kp N1           &kp N2    &kp N3        &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0         &kp GRAVE
-&trans                    &kp EXCLAMATION  &kp AT    &kp HASH      &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON  &trans
-&trans                    &kp CARET        &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp MINUS       &trans        &trans           &kp BACKSLASH  &trans
-&trans                    &trans           &trans    &trans        &kp SPACE             &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans          &trans        &trans           &trans         &trans
-                                           &trans    &trans        &trans                &trans                 &trans             &trans          &trans        &trans
+&kp LC(SPACE)  &kp N1           &kp N2    &kp N3        &kp N4                &kp N5                 &kp N6             &kp N7          &kp N8        &kp N9           &kp N0         &kp GRAVE
+&trans         &kp EXCLAMATION  &kp AT    &kp HASH      &kp DOLLAR            &kp PERCENT            &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp SEMICOLON  &trans
+&trans         &kp CARET        &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp MINUS       &trans        &trans           &kp BACKSLASH  &trans
+&trans         &trans           &trans    &trans        &kp SPACE             &kp LEFT_BRACKET       &kp RIGHT_BRACKET  &trans          &trans        &trans           &trans         &trans
+                                &trans    &trans        &trans                &trans                 &trans             &trans          &trans        &trans
             >;
         };
 
