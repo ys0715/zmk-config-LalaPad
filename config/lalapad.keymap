@@ -412,7 +412,7 @@
 &kp LG(LS(NUMBER_4))  &kp LG(Q)  &kp LG(W)  &kp LANGUAGE_1  &kp LG(R)             &kp LG(T)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp HOME    &kp PAGE_UP   &mt2 INS DELETE
 &trans                &kp LG(A)  &kp LG(S)  &kp LANGUAGE_2  &kp LG(F)             &kp LS(LA(SPACE))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp END     &pdn_cln      &trans
 &trans                &kp LG(Z)  &kp LG(X)  &kp LG(C)       &mt2 LG(LS(V)) LG(V)  &kp LG(BACKSPACE)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &dot_comma  &kp UP_ARROW  &trans
-&trans                &trans     &trans     &trans          &mcr_mcr              &kp CAPS           &kp KP_NUMBER_0  &trans           &lt 2 KP_NUMBER_0  &kp LEFT    &kp DOWN      &kp RIGHT
+&trans                &trans     &trans     &trans          &mcr_mcr              &kp CAPS           &kp LC(SPACE)    &trans           &lt 2 KP_NUMBER_0  &kp LEFT    &kp DOWN      &kp RIGHT
                                  &trans     &trans          &trans                &trans             &trans           &trans           &trans             &trans
             >;
         };
