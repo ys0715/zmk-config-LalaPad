@@ -380,7 +380,7 @@
         };
 
         scroll {
-            bindings = <&mo 7>;
+            bindings = <&mo 6>;
             key-positions = <19 20 21>;
             layers = <0 1>;
         };
