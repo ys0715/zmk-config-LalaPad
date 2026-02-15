@@ -441,11 +441,11 @@
             sensor-bindings = <&size_up_down>, <&size_up_down>;
 
             bindings = <
-&kp LG(LS(NUMBER_4))  &kp LG(Q)  &kp LG(W)  &kp LANGUAGE_1  &kp LG(R)             &kp LG(T)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp HOME    &kp PAGE_UP   &mt2 INS DELETE
-&trans                &kp LG(A)  &kp LG(S)  &kp LANGUAGE_2  &kp LG(F)             &kp LS(LA(SPACE))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp END     &pdn_cln      &trans
-&trans                &kp LG(Z)  &kp LG(X)  &kp LG(C)       &mt2 LG(LS(V)) LG(V)  &kp LG(BACKSPACE)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &dot_comma  &kp UP_ARROW  &trans
-&trans                &trans     &trans     &trans          &mcr_mcr              &lt 6 CAPS         &kp LA(GRAVE)    &trans           &lt 4 KP_NUMBER_0  &kp LEFT    &kp DOWN      &kp RIGHT
-                                 &trans     &trans          &trans                &trans             &trans           &trans           &trans             &trans
+&kp LG(LS(S))  &kp LC(Q)  &kp LC(W)  &kp LANGUAGE_1  &kp LC(R)  &kp LC(T)          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9    &kp HOME    &kp PAGE_UP   &mt2 INS DELETE
+&trans         &kp LC(A)  &kp LC(S)  &kp LANGUAGE_2  &kp LC(F)  &kp LS(LA(SPACE))  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6    &kp END     &pdn_cln      &trans
+&trans         &kp LC(Z)  &kp LC(X)  &kp LC(C)       &kp LC(V)  &kp LC(BACKSPACE)  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3    &dot_comma  &kp UP_ARROW  &trans
+&trans         &trans     &trans     &trans          &mcr_mcr   &lt 6 CAPS         &kp LA(GRAVE)    &trans           &lt 4 KP_NUMBER_0  &kp LEFT    &kp DOWN      &kp RIGHT
+                          &trans     &trans          &trans     &trans             &trans           &trans           &trans             &trans
             >;
         };
 
@@ -511,9 +511,9 @@
         WIN_BROWSER_LAYER {
             display-name = "Win_Browser_layer";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)     &kp LG(MINUS)      &kp LG(EQUAL)    &kp LG(LS(T))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LC(TAB)        &kp LC(LS(TAB))  &kp LG(RIGHT)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(T)     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(W)      &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(R)     &kp LC(MINUS)      &kp LC(EQUAL)    &kp LS(LC(T))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(LEFT)  &kp LC(TAB)        &kp LC(LS(TAB))  &kp LA(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LC(T)     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LC(W)      &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans             &trans           &trans         &trans  &trans
                 &trans  &trans  &trans  &trans  &trans        &trans             &trans           &trans
             >;
