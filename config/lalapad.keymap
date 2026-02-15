@@ -445,7 +445,7 @@
             display-name = "Browser_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(R)     &kp LG(MINUS)      &kp LG(EQUAL)    &kp LG(LS(T))  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &msc SCRL_UP       &msc SCRL_DOWN   &kp LG(RIGHT)  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LC(TAB)        &kp LC(LS(TAB))  &kp LG(RIGHT)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp LG(T)     &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LG(W)      &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans             &trans           &trans         &trans  &trans
                 &trans  &trans  &trans  &trans  &trans        &trans             &trans           &trans
