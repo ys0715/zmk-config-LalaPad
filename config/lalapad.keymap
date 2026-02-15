@@ -368,13 +368,13 @@
 
         middle_click {
             bindings = <&mkp MCLK>;
-            key-positions = <19 20 21>;
+            key-positions = <21 22>;
             layers = <0 1>;
         };
 
         scroll {
             bindings = <&mo 6>;
-            key-positions = <18 19>;
+            key-positions = <19 20 21>;
             layers = <0>;
         };
     };
